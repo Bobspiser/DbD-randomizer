@@ -310,6 +310,9 @@ function randomateKiller() {
     var killerselected = killershuffled.slice(1);
 
     document.getElementById("perkslotone").innerHTML = killerselected[0];
+    document.getElementById("perkslottwo").innerHTML = killerselected[0];
+    document.getElementById("perkslotthree").innerHTML = killerselected[0];
+    document.getElementById("perkslotfour").innerHTML = killerselected[0];
 }
 
 function randomateKillPerks() {
@@ -335,3 +338,4 @@ function randomateItems() {
     document.getElementById("perkslotthree").innerHTML = Itemselected[0];
     document.getElementById("perkslotfour").innerHTML = Itemselected[0];
 };
+
