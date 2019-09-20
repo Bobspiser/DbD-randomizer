@@ -10,6 +10,7 @@
 		<script>document.documentElement.className += 'js';</script>
 	</head>
 	<body>
+        
 		<div class="sidebar">
 			<h1>Roulette Choice</h1>
 			
@@ -17,8 +18,9 @@
 			
 			<div class="buttons_wrap"> 
 				<input type="button" value="Survivor Perks" class="btn btn-sm animated-button thar-three" onclick="showFunc(0, 1)">
+                	<input type="button" value="Items" class="btn btn-sm animated-button thar-three" onclick="showFunc(2, 1)">
 				<input type="button" value="Killer Perks" class="btn btn-sm animated-button thar-three" onclick="showFunc(1, 1)">
-				
+
 			</div>
 		</div>
 
@@ -26,8 +28,8 @@
     		<h1>Dead By Daylight Helper</h1>
 			
 			<div class="center">
-				<h4 id="rand_title">Welcome to roulette!</h4>
-				<p id="rand_desc">To start click on what you would like to be randomly generated.</p>
+				<h4 id="rand_title">Welcome to Dead by Daylight's perk roulette!</h4>
+				<p id="rand_desc">To start click on what you would like to be randomly perk generated. You can choose for survivor or as a killer</p>
 				
 				<ul id="slotUL">
 					<li><span id="perkslotone"><img src="css/image/roulette/killer/perkslot.gif" style='display:none'></span></li>
@@ -40,10 +42,6 @@
 				
 			</div>
 		</div>
-			
-		<video autoplay loop id="video-background" muted plays-inline width="320" height="180">
-		  <source src="css/video/video.mp4" type="video/mp4">
-		</video> 
 
 	</body>
 </html>

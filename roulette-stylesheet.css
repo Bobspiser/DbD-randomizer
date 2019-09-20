@@ -4,7 +4,7 @@
 
 body {
 
-	background-color: #000;
+	background-image: url(wp2222325.jpg);
     color: white;
 }
 
@@ -38,20 +38,6 @@ body {
   	margin-top: 3%;
   	width: 100%;
   	font-family: 'Roboto', sans-serif;
-}
-
-#video-background {
-
-  	display: block;
-  	margin: 0 auto;
-  	position: fixed;
-  	right: 0; 
-  	bottom: 0;
-  	min-width: 100%; 
- 	min-height: 100%;
- 	width: auto; 
- 	height: auto;
- 	z-index: -100;
 }
 
 .buttons_wrap {

@@ -1,11 +1,14 @@
 var RandFunc = [function(){randomateSurvPerks()},
-				function(){randomateKillPerks()}];
+				function(){randomateKillPerks()},
+                function(){randomateItems()}];
 				
 var RandTitles = ["Random Survivor Perks",
-				  "Random Killer Perks"];
+				  "Random Killer Perks",
+                  "Random Items"];
 				  
 var RandDesc = ["These are random survivor perks",
-				"These are random killer perks"];
+				"These are random killer perks",
+                "These are random items"];
 
 var SurvImgSrc = ["<img src='css/image/roulette/survivor/AceInTheHole.png'>Ace In The Hole",
 			  "<img src='css/image/roulette/survivor/Adrenaline.png'>Adrenaline",
@@ -69,6 +72,25 @@ var SurvImgSrc = ["<img src='css/image/roulette/survivor/AceInTheHole.png'>Ace I
 			  "<img src='css/image/roulette/survivor/UrbanEvasion.png'>Urban Evasion",
 			  "<img src='css/image/roulette/survivor/WellMakeIt.png'>We'll Make It",
 			  "<img src='css/image/roulette/survivor/WereGonnaLiveForever.png'>Were Gonna Live Forever"];
+
+var Items = ["<img src='css/image/roulette/items/chinesefirecracker.png'>Chinese                  Firecracker", 
+             "<img src='css/image/roulette/items/winterPartyStarter.png'>Winter Party Starter", 
+             "<img src='css/image/roulette/items/partyPopper.png'>Party Popper",
+             "<img src='css/image/roulette/items/willOwisp.png'>Will O'Wisp",
+             "<img src='css/image/roulette/items/skeletonkey.png'>Skeleton Key",
+             "<img src='css/image/roulette/items/dullkey.png'>Dull Key",
+             "<img src='css/image/roulette/items/brokenkey.png'>Broken Key",
+             "<img src='css/image/roulette/items/rainbowmap.png'>Rainbow Map",
+             "<img src='css/image/roulette/items/mapitem.png'>Map Item",
+             "<img src='css/image/roulette/items/flashlightItem.png'>Flashligt Item",
+             "<img src='css/image/roulette/items/sportFlashlight.png'>Sport Flashlight",
+             "<img src='css/image/roulette/items/utilityFlashlight.png'>Utility Flashlight",
+             "<img src='css/image/roulette/items/campingAidKit.png'>Camping Aid Kit",
+             "<img src='css/image/roulette/items/First Aid Kit'>",
+             "<img src='css/image/roulette/items/partyPopper.png'>Party Popper",
+            ];
+
+
 
 var KillImgSrc = ["<img src='css/image/roulette/killer/ANursesCalling.png'>A Nurse's Calling",
 				  "<img src='css/image/roulette/killer/Agitation.png'>A Nurses Calling",
@@ -155,3 +177,10 @@ function randomateKillPerks() {
 	document.getElementById("perkslotfour").innerHTML = Killselected[3];
 };
 
+function randomateItems() {
+    var Itemshuffled = Items.sort(function(){return .5 - Math.random()});
+    var Itemselected = Itemshuffled.slice(1);
+    
+    document.getElementById("perkslotone").innerHTML = Itemselected[0];
+    
+};
