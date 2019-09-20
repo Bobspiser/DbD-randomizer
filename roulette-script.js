@@ -89,13 +89,24 @@ var Items = ["<img src='css/image/roulette/items/chinesefirecracker.png'>Chinese
              "<img src='css/image/roulette/items/dullkey.png'>Dull Key",
              "<img src='css/image/roulette/items/brokenkey.png'>Broken Key",
              "<img src='css/image/roulette/items/rainbowmap.png'>Rainbow Map",
-             "<img src='css/image/roulette/items/mapitem.png'>Map Item",
-             "<img src='css/image/roulette/items/flashlightItem.png'>Flashligt Item",
+             "<img src='css/image/roulette/items/mapitem.png'>Map",
+             "<img src='css/image/roulette/items/flashlightItem.png'>Flashligt",
              "<img src='css/image/roulette/items/sportFlashlight.png'>Sport Flashlight",
              "<img src='css/image/roulette/items/utilityFlashlight.png'>Utility Flashlight",
              "<img src='css/image/roulette/items/campingAidKit.png'>Camping Aid Kit",
              "<img src='css/image/roulette/items/First Aid Kit'>",
-             "<img src='css/image/roulette/items/partyPopper.png'>Party Popper"
+             "<img src='css/image/roulette/items/partyPopper.png'>Party Popper",
+             "<img src='css/image/roulette/items/firstaidkit.png'>First Aid Kit",
+             "<img src='css/image/roulette/items/emergencyMed-kit.png'>Emergency Med-Kit",
+             "<img src='css/image/roulette/items/rangermed-kit.png'>Ranger Med-Kit",
+             "<img src='css/image/roulette/items/allHallowsEveLunchbox.png'>All Hallow' Eve Lunchbox",
+             "<img src='css/image/roulette/items/worn-outTools.png'>Worn-Out Tools",
+             "<img src='css/image/roulette/items/toolboxitem.png'>Toolbox",
+             "<img src='css/image/roulette/items/mechanicsToolbox.png'>Mechanic's Toolbox",
+             "<img src='css/image/roulette/items/commodioustoolbox.png'>Commodious Toolbox",
+             "<img src='css/image/roulette/items/engineersToolbox.png'>Engineer's Toolbox",
+             "<img src='css/image/roulette/items/alexsToolbox.png'>Alex's Toolbox",
+
             ];
 
 var Killer = [
@@ -275,19 +286,10 @@ function randomateKillPerks() {
 
 function randomateItems() {
     var Itemshuffled = Items.sort(function(){return .5 - Math.random()});
-    var Itemselected = Itemshuffled.slice(1);
+    var Itemselected = Itemshuffled.slice(0);
     
     document.getElementById("perkslotone").innerHTML = Itemselected[0];
-    
+    document.getElementById("perkslottwo").innerHTML = Itemselected[0];
+    document.getElementById("perkslotthree").innerHTML = Itemselected[0];
+    document.getElementById("perkslotfour").innerHTML = Itemselected[0];
 };
-
-/*
-function randomateKillerAddons() {
-    var killeraddonShuffled = killeraddons.sort(function(){return .5 - Math.random()});
-    var killeraddonSelected = killeraddonShuffled.slice(1);
-    
-    document.getElementById("perkslotone").innerHTML = killeraddonSelected[0];
-    document.getElementById("perkslottwo").innerHTML = killeraddonSelected[1];
-}
-
-*/
