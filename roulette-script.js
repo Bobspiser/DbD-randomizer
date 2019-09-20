@@ -1,14 +1,22 @@
 var RandFunc = [function(){randomateSurvPerks()},
 				function(){randomateKillPerks()},
-                function(){randomateItems()}];
+                function(){randomateItems()},
+               function(){randomateKiller()},
+               function(){randomKillerAddons()}];
 				
 var RandTitles = ["Random Survivor Perks",
+                  "Random Items",
+                  "Random Killer",
 				  "Random Killer Perks",
-                  "Random Items"];
+                  "Random Killer Addons"
+                 ];
 				  
 var RandDesc = ["These are random survivor perks",
-				"These are random killer perks",
-                "These are random items"];
+                "These are random items",
+				"These are random killers",
+                "These are random killer perks",
+                "These are random killer addons"
+               ];
 
 var SurvImgSrc = ["<img src='css/image/roulette/survivor/AceInTheHole.png'>Ace In The Hole",
 			  "<img src='css/image/roulette/survivor/Adrenaline.png'>Adrenaline",
@@ -86,6 +94,8 @@ var Items = ["<img src='css/image/roulette/items/chinesefirecracker.png'>Chinese
              "<img src='css/image/roulette/items/sportFlashlight.png'>Sport Flashlight",
              "<img src='css/image/roulette/items/utilityFlashlight.png'>Utility Flashlight",
              "<img src='css/image/roulette/items/campingAidKit.png'>Camping Aid Kit",
+             "<img src='css/image/roulette/items/First Aid Kit'>",
+             "<img src='css/image/roulette/items/partyPopper.png'>Party Popper",
              "<img src='css/image/roulette/items/firstaidkit.png'>First Aid Kit",
              "<img src='css/image/roulette/items/emergencyMed-kit.png'>Emergency Med-Kit",
              "<img src='css/image/roulette/items/rangermed-kit.png'>Ranger Med-Kit",
@@ -96,9 +106,26 @@ var Items = ["<img src='css/image/roulette/items/chinesefirecracker.png'>Chinese
              "<img src='css/image/roulette/items/commodioustoolbox.png'>Commodious Toolbox",
              "<img src='css/image/roulette/items/engineersToolbox.png'>Engineer's Toolbox",
              "<img src='css/image/roulette/items/alexsToolbox.png'>Alex's Toolbox",
+
             ];
 
-
+var Killer = [
+     "<img src='css/image/roulette/kill/BE.png'>The Huntress",
+     "<img src='css/image/roulette/kill/CA.png'>The Cannibal",
+     "<img src='css/image/roulette/kill/DO.png'>The Doctor",
+     "<img src='css/image/roulette/kill/EK.png'>The Nightmare",
+     "<img src='css/image/roulette/kill/GK.png'>The Clown",
+     "<img src='css/image/roulette/kill/HA.png'>The Hag",
+     "<img src='css/image/roulette/kill/HB.png'>Hill Billy",
+     "<img src='css/image/roulette/kill/HK.png'>The Spirit",
+     "<img src='css/image/roulette/kill/KK.png'>Legion",
+     "<img src='css/image/roulette/kill/MK.png'>The Plague",
+     "<img src='css/image/roulette/kill/NR.png'>Nurse",
+     "<img src='css/image/roulette/kill/OK.PNG'>Ghostface",
+     "<img src='css/image/roulette/kill/QK.png'>The Demorgorgon",
+     "<img src='css/image/roulette/kill/SH.png'>The Shape",
+     "<img src='css/image/roulette/kill/TR.png'>The Trapper",
+     "<img src='css/image/roulette/kill/WR.png'>The Wraith"];
 
 var KillImgSrc = ["<img src='css/image/roulette/killer/ANursesCalling.png'>A Nurse's Calling",
 				  "<img src='css/image/roulette/killer/Agitation.png'>A Nurses Calling",
@@ -140,6 +167,71 @@ var KillImgSrc = ["<img src='css/image/roulette/killer/ANursesCalling.png'>A Nur
 				  "<img src='css/image/roulette/killer/Unrelenting.png'>Unrelenting",
 				  "<img src='css/image/roulette/killer/Whispers.png'>Whispers"];
 
+var huntressAdd = [
+    
+];
+
+var cannibalAdd = [
+    
+];
+
+var doctorAdd = [
+    
+];
+
+var freddyAdd = [
+    
+];
+
+var clownAdd = [
+    
+];
+
+var hag = [
+    
+];
+
+var hillAdd = [
+    
+];
+
+var spiritAdd = [
+    
+];
+
+var legionAdd = [
+    
+];
+
+var plagueAdd = [
+    
+];
+
+var nurseAdd = [
+    
+];
+
+var ghostAdd = [
+    
+];
+
+var demoAdd = [
+    
+];
+
+var shapeAdd = [
+    
+];
+
+var trapperAdd = [
+    
+];
+
+var wraithAdd = [
+    
+];
+
+
 var RandButton = ["none",
 				  "block"];
 
@@ -174,6 +266,13 @@ function randomateSurvPerks() {
 	document.getElementById("perkslotfour").innerHTML = Survselected[3];
 	
 };
+
+function randomateKiller() {
+    var killershuffled = Killer.sort(function(){return .5 - Math.random()});
+    var killerselected = killershuffled.slice(1);
+    
+    document.getElementById("perkslotone").innerHTML = killerselected[0];
+}
 
 function randomateKillPerks() {
 	var Killshuffled = KillImgSrc.sort(function(){return .5 - Math.random()});
