@@ -187,8 +187,10 @@ function randomateKillPerks() {
 
 function randomateItems() {
     var Itemshuffled = Items.sort(function(){return .5 - Math.random()});
-    var Itemselected = Itemshuffled.slice(1);
+    var Itemselected = Itemshuffled.slice(0);
     
     document.getElementById("perkslotone").innerHTML = Itemselected[0];
-    
+    document.getElementById("perkslottwo").innerHTML = Itemselected[0];
+    document.getElementById("perkslotthree").innerHTML = Itemselected[0];
+    document.getElementById("perkslotfour").innerHTML = Itemselected[0];
 };
