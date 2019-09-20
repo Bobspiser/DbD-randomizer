@@ -1,16 +1,26 @@
-var RandFunc = [function(){randomateSurvPerks()},
-				function(){randomateKillPerks()},
-                function(){randomateItems()},
-               function(){randomateKiller()},
-               function(){randomKillerAddons()}];
-				
+var RandFunc = [function () {
+        randomateSurvPerks()
+    },
+				function () {
+        randomateKillPerks()
+    },
+                function () {
+        randomateItems()
+    },
+               function () {
+        randomateKiller()
+    },
+               function () {
+        randomKillerAddons()
+    }];
+
 var RandTitles = ["Random Survivor Perks",
                   "Random Items",
                   "Random Killer",
 				  "Random Killer Perks",
                   "Random Killer Addons"
                  ];
-				  
+
 var RandDesc = ["These are random survivor perks",
                 "These are random items",
 				"These are random killers",
@@ -81,8 +91,8 @@ var SurvImgSrc = ["<img src='css/image/roulette/survivor/AceInTheHole.png'>Ace I
 			  "<img src='css/image/roulette/survivor/WellMakeIt.png'>We'll Make It",
 			  "<img src='css/image/roulette/survivor/WereGonnaLiveForever.png'>Were Gonna Live Forever"];
 
-var Items = ["<img src='css/image/roulette/items/chinesefirecracker.png'>Chinese                  Firecracker", 
-             "<img src='css/image/roulette/items/winterPartyStarter.png'>Winter Party Starter", 
+var Items = ["<img src='css/image/roulette/items/chinesefirecracker.png'>Chinese                  Firecracker",
+             "<img src='css/image/roulette/items/winterPartyStarter.png'>Winter Party Starter",
              "<img src='css/image/roulette/items/partyPopper.png'>Party Popper",
              "<img src='css/image/roulette/items/willOwisp.png'>Will O'Wisp",
              "<img src='css/image/roulette/items/skeletonkey.png'>Skeleton Key",
@@ -168,67 +178,67 @@ var KillImgSrc = ["<img src='css/image/roulette/killer/ANursesCalling.png'>A Nur
 				  "<img src='css/image/roulette/killer/Whispers.png'>Whispers"];
 
 var huntressAdd = [
-    
+
 ];
 
 var cannibalAdd = [
-    
+
 ];
 
 var doctorAdd = [
-    
+
 ];
 
 var freddyAdd = [
-    
+
 ];
 
 var clownAdd = [
-    
+
 ];
 
 var hag = [
-    
+
 ];
 
 var hillAdd = [
-    
+
 ];
 
 var spiritAdd = [
-    
+
 ];
 
 var legionAdd = [
-    
+
 ];
 
 var plagueAdd = [
-    
+
 ];
 
 var nurseAdd = [
-    
+
 ];
 
 var ghostAdd = [
-    
+
 ];
 
 var demoAdd = [
-    
+
 ];
 
 var shapeAdd = [
-    
+
 ];
 
 var trapperAdd = [
-    
+
 ];
 
 var wraithAdd = [
-    
+
 ];
 
 
@@ -236,58 +246,66 @@ var RandButton = ["none",
 				  "block"];
 
 
-				  
+
 function showFunc(x, y) {
     document.getElementById("rand_title").innerHTML = RandTitles[x];
     document.getElementById("rand_desc").innerHTML = RandDesc[x];
-	document.getElementById("random").onclick = RandFunc[x];
-	
-	document.getElementById("perkslotone").src = "css/image/roulette/survivor/perkslot.gif";
-	document.getElementById("perkslottwo").src = "css/image/roulette/survivor/perkslot.gif";
-	document.getElementById("perkslotthree").src = "css/image/roulette/survivor/perkslot.gif";
-	document.getElementById("perkslotfour").src = "css/image/roulette/survivor/perkslot.gif";
-	
-	document.getElementById("perkslotone").style.display = RandButton[y];
-	document.getElementById("perkslottwo").style.display = RandButton[y];
-	document.getElementById("perkslotthree").style.display = RandButton[y];
-	document.getElementById("perkslotfour").style.display = RandButton[y];
-	
-	document.getElementById('random').style.display = RandButton[y];
+    document.getElementById("random").onclick = RandFunc[x];
+
+    document.getElementById("perkslotone").src = "css/image/roulette/survivor/perkslot.gif";
+    document.getElementById("perkslottwo").src = "css/image/roulette/survivor/perkslot.gif";
+    document.getElementById("perkslotthree").src = "css/image/roulette/survivor/perkslot.gif";
+    document.getElementById("perkslotfour").src = "css/image/roulette/survivor/perkslot.gif";
+
+    document.getElementById("perkslotone").style.display = RandButton[y];
+    document.getElementById("perkslottwo").style.display = RandButton[y];
+    document.getElementById("perkslotthree").style.display = RandButton[y];
+    document.getElementById("perkslotfour").style.display = RandButton[y];
+
+    document.getElementById('random').style.display = RandButton[y];
 };
 
 function randomateSurvPerks() {
-	
-	var Survshuffled = SurvImgSrc.sort(function(){return .5 - Math.random()});
-	var Survselected = Survshuffled.slice(0,4);
-	
-	document.getElementById("perkslotone").innerHTML = Survselected[0];
-	document.getElementById("perkslottwo").innerHTML = Survselected[1];
-	document.getElementById("perkslotthree").innerHTML = Survselected[2];
-	document.getElementById("perkslotfour").innerHTML = Survselected[3];
-	
+
+    var Survshuffled = SurvImgSrc.sort(function () {
+        return .5 - Math.random()
+    });
+    var Survselected = Survshuffled.slice(0, 4);
+
+    document.getElementById("perkslotone").innerHTML = Survselected[0];
+    document.getElementById("perkslottwo").innerHTML = Survselected[1];
+    document.getElementById("perkslotthree").innerHTML = Survselected[2];
+    document.getElementById("perkslotfour").innerHTML = Survselected[3];
+
 };
 
 function randomateKiller() {
-    var killershuffled = Killer.sort(function(){return .5 - Math.random()});
+    var killershuffled = Killer.sort(function () {
+        return .5 - Math.random()
+    });
     var killerselected = killershuffled.slice(1);
-    
+
     document.getElementById("perkslotone").innerHTML = killerselected[0];
 }
 
 function randomateKillPerks() {
-	var Killshuffled = KillImgSrc.sort(function(){return .5 - Math.random()});
-	var Killselected = Killshuffled.slice(0,4);
-	
-	document.getElementById("perkslotone").innerHTML = Killselected[0];
-	document.getElementById("perkslottwo").innerHTML = Killselected[1];
-	document.getElementById("perkslotthree").innerHTML = Killselected[2];
-	document.getElementById("perkslotfour").innerHTML = Killselected[3];
+    var Killshuffled = KillImgSrc.sort(function () {
+        return .5 - Math.random()
+    });
+    var Killselected = Killshuffled.slice(0, 4);
+
+    document.getElementById("perkslotone").innerHTML = Killselected[0];
+    document.getElementById("perkslottwo").innerHTML = Killselected[1];
+    document.getElementById("perkslotthree").innerHTML = Killselected[2];
+    document.getElementById("perkslotfour").innerHTML = Killselected[3];
 };
 
 function randomateItems() {
-    var Itemshuffled = Items.sort(function(){return .5 - Math.random()});
+    var Itemshuffled = Items.sort(function () {
+        return .5 - Math.random()
+    });
     var Itemselected = Itemshuffled.slice(0);
-    
+
     document.getElementById("perkslotone").innerHTML = Itemselected[0];
     document.getElementById("perkslottwo").innerHTML = Itemselected[0];
     document.getElementById("perkslotthree").innerHTML = Itemselected[0];
