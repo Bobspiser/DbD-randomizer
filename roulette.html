@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>DBD Helper - Roulette</title>
+		<link rel="icon" type="image/png" href="css/image/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="image/favicon-16x16.png" sizes="16x16" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="roulette-stylesheet.css"/>
+		<script src="roulette-script.js"></script>
+		<script>document.documentElement.className += 'js';</script>
+	</head>
+	<body>
+		<div class="sidebar">
+			<h1>Roulette Choice</h1>
+			
+			<p> Perk Roulette </p>
+			
+			<div class="buttons_wrap"> 
+				<input type="button" value="Survivor Perks" class="btn btn-sm animated-button thar-three" onclick="showFunc(0, 1)">
+				<input type="button" value="Killer Perks" class="btn btn-sm animated-button thar-three" onclick="showFunc(1, 1)">
+				
+			</div>
+		</div>
+
+		<div class="content">
+    		<h1>Dead By Daylight Helper</h1>
+			
+			<div class="center">
+				<h4 id="rand_title">Welcome to roulette!</h4>
+				<p id="rand_desc">To start click on what you would like to be randomly generated.</p>
+				
+				<ul id="slotUL">
+					<li><span id="perkslotone"><img src="css/image/roulette/killer/perkslot.gif" style='display:none'></span></li>
+					<li><span id="perkslottwo"><img src="css/image/roulette/killer/perkslot.gif" style='display:none'></span></li>
+					<li><span id="perkslotthree"><img src="css/image/roulette/killer/perkslot.gif" style='display:none'></span></li>
+					<li><span id="perkslotfour"><img src="css/image/roulette/killer/perkslot.gif" style='display:none'></span></li>
+				</ul>
+				
+				<input type="button" value="Randomate" class="btn btn-sm animated-button thar-three random" id="random" onclick="" style='display:none'>
+				
+			</div>
+		</div>
+			
+		<video autoplay loop id="video-background" muted plays-inline width="320" height="180">
+		  <source src="css/video/video.mp4" type="video/mp4">
+		</video> 
+
+	</body>
+</html>
