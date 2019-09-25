@@ -197,7 +197,8 @@ var KillImgSrc = ["<img src='css/image/roulette/killer/ANursesCalling.png'>A Nur
 				  "<img src='css/image/roulette/killer/Thanatophobia.png'>Thanatophobia",
 				  "<img src='css/image/roulette/killer/UnnervingPresence.png'>Unnerving Presence",
 				  "<img src='css/image/roulette/killer/Unrelenting.png'>Unrelenting",
-				  "<img src='css/image/roulette/killer/Whispers.png'>Whispers"];
+				  "<img src='css/image/roulette/killer/Whispers.png'>Whispers",
+                 ];
 
 var huntressAdd = [
 
@@ -263,6 +264,74 @@ var wraithAdd = [
 
 ];
 
+var keyadd = [
+    "<img src='css/image/roulette/ItemAddons/Keyaddons/bloodAmber.png'>Blood Amber",
+    "<img src='css/image/roulette/ItemAddons/Keyaddons/erodedToken.png'>Eroded Token",
+     "<img src='css/image/roulette/ItemAddons/Keyaddons/goldToken.png'>Gold Token",
+     "<img src='css/image/roulette/ItemAddons/Keyaddons/milkyGlass.png'>Milky Glass",
+     "<img src='css/image/roulette/ItemAddons/Keyaddons/prayerBeads.png'>Prayer Beads",
+     "<img src='css/image/roulette/ItemAddons/Keyaddons/prayerRope.png'>Prayer Rope",
+     "<img src='css/image/roulette/ItemAddons/Keyaddons/scratchedPearl.png'>Scratched Pearl",
+     "<img src='css/image/roulette/ItemAddons/Keyaddons/uniqueWeddingRing.png'>Unigue Wedding Ring",
+     "<img src='css/image/roulette/ItemAddons/Keyaddons/weavedRing.png'>Weaved Ring",
+];
+
+var medkitadd = [
+     "<img src='css/image/roulette/ItemAddons/Medkiaddons/abdominalDressing.png'>Abdominal Dressing",
+     "<img src='css/image/roulette/ItemAddons/Medkiaddons/anti-haemorrhagicSyrringe.png'>Anti-Haemorrhagic Syringe",
+     "<img src='css/image/roulette/ItemAddons/Medkiaddons/bandages.png'>Bandages",
+     "<img src='css/image/roulette/ItemAddons/Medkiaddons/butterflyTape.png'>Butterfly Tape",
+     "<img src='css/image/roulette/ItemAddons/Medkiaddons/gauzeRoll.png'>Gauze Roll",
+     "<img src='css/image/roulette/ItemAddons/Medkiaddons/gelDressings.png'>Gel Dressings",
+     "<img src='css/image/roulette/ItemAddons/Medkiaddons/medicalScissors.png'>Medical Scissors",
+     "<img src='css/image/roulette/ItemAddons/Medkiaddons/rubberGloves.png'>Rubber Gloves",
+     "<img src='css/image/roulette/ItemAddons/Medkiaddons/selfAdherentWrap.png'>Self Adherent Wrap",
+     "<img src='css/image/roulette/ItemAddons/Medkiaddons/sponge.png'>Sponge",
+     "<img src='css/image/roulette/ItemAddons/Medkiaddons/stypticAgent.png'>Styptic Agent",
+     "<img src='css/image/roulette/ItemAddons/Medkiaddons/surgicalSuture.png'>Surgical Suture",
+];
+
+var mapadd = [
+    "<img src='css/image/roulette/ItemAddons/Mapaddons/blackSilkCord.png'>Black Silk Cord",
+    "<img src='css/image/roulette/ItemAddons/Mapaddons/crystalBead.png'>Crystal Bead",
+    "<img src='css/image/roulette/ItemAddons/Mapaddons/glassBead.png'>Glass Bead",
+    "<img src='css/image/roulette/ItemAddons/Mapaddons/mapAddendum.png'>Map Addendum",
+    "<img src='css/image/roulette/ItemAddons/Mapaddons/oddStamp.png'>Odd Stamp",
+    "<img src='css/image/roulette/ItemAddons/Mapaddons/redTwine.png'>Red Twine",
+    "<img src='css/image/roulette/ItemAddons/Mapaddons/retardantJelly.png'>Retardant Jelly",
+    "<img src='css/image/roulette/ItemAddons/Mapaddons/unusualStamp.png'>Unusual Stamp",
+    "<img src='css/image/roulette/ItemAddons/Mapaddons/yellowWire.png'>Yellow Wire",
+];
+
+var toolboxadd = [
+    "<img src='css/image/roulette/ItemAddons/Toolboxaddons/brandNewPart.png'>Brand New Part",
+    "<img src='css/image/roulette/ItemAddons/Toolboxaddons/cleanRag.png'>Clean Rag",
+    "<img src='css/image/roulette/ItemAddons/Toolboxaddons/cuttingWire.png'>Cutting Wire",
+    "<img src='css/image/roulette/ItemAddons/Toolboxaddons/gripWrench.png'>Grip Wrench",
+    "<img src='css/image/roulette/ItemAddons/Toolboxaddons/hacksaw.png'>Hacksaw",
+    "<img src='css/image/roulette/ItemAddons/Toolboxaddons/instructions.png'>Instructions",
+    "<img src='css/image/roulette/ItemAddons/Toolboxaddons/protectiveGloves.png'>Protective Gloves",
+    "<img src='css/image/roulette/ItemAddons/Toolboxaddons/scraps.png'>Scraps",
+    "<img src='css/image/roulette/ItemAddons/Toolboxaddons/socketSwivels.png'>Socket Swivels",
+    "<img src='css/image/roulette/ItemAddons/Toolboxaddons/springClamp.png'>Spring Clamp",
+    "<img src='css/image/roulette/ItemAddons/Toolboxaddons/wireSpool.png'>Wire Spool",
+];
+
+var flashlightadd = [
+    "<img src='css/image/roulette/ItemAddons/Flashlightaddons/battery.png'>Battery",
+    "<img src='css/image/roulette/ItemAddons/Flashlightaddons/focusLens.png'>Focus Lens",
+    "<img src='css/image/roulette/ItemAddons/Flashlightaddons/heavyDutyBattery.png'>Heavy Duty Battery",
+    "<img src='css/image/roulette/ItemAddons/Flashlightaddons/high-EndSapphireLens.png'>High-End Sapphire Lens",
+    "<img src='css/image/roulette/ItemAddons/Flashlightaddons/intenseHalogen.png'>Intense Halogen",
+    "<img src='css/image/roulette/ItemAddons/Flashlightaddons/leatherGrip.png'>Leather Grip",
+    "<img src='css/image/roulette/ItemAddons/Flashlightaddons/longLifeBattery.png'>Long Life Battery",
+    "<img src='css/image/roulette/ItemAddons/Flashlightaddons/lowAmpFilament.png'>Low Amp Filament",
+    "<img src='css/image/roulette/ItemAddons/Flashlightaddons/oddBulb.png'>Odd Bulb",
+    "<img src='css/image/roulette/ItemAddons/Flashlightaddons/powerBulb.png'>Power Bulb",
+    "<img src='css/image/roulette/ItemAddons/Flashlightaddons/rubberGrip.png'>Rubber Grip",
+    "<img src='css/image/roulette/ItemAddons/Flashlightaddons/tirOptic.png'>Tir Optic",
+    "<img src='css/image/roulette/ItemAddons/Flashlightaddons/wideLens.png'>Wide Lens",
+];
 
 var RandButton = ["none",
 				  "block"];
@@ -338,8 +407,56 @@ function randomateItems() {
     });
     var Itemselected = Itemshuffled.slice(0);
 
-    document.getElementById("perkslotone").innerHTML = Itemselected[0];
-    document.getElementById("perkslottwo").innerHTML = Itemselected[0];
-    document.getElementById("perkslotthree").innerHTML = Itemselected[0];
-    document.getElementById("perkslotfour").innerHTML = Itemselected[0];
-};
+    if (Itemselected[0] == "Key" ) {
+        var itemaddshuffled = keyadd.sort(function(){
+            return .5 - Math.random()
+       });
+        var Itemaddselected = itemaddshuffled.slice(0, 1);
+        
+        document.getElementById("perkslotone").innerHTML = Itemselected[0];
+        document.getElementById("perkslotone").innerHTML = Itemaddselected[0];
+        document.getElementById("perkslotone").innerHTML = Itemaddselected[1];
+}
+    else if (Itemselected[0] == "Map") {
+        var itemaddshuffled = mapadd.sort(function(){
+            return .5 - Math.random()
+       });
+        var Itemaddselected = itemaddshuffled.slice(0, 1);
+        
+        document.getElementById("perkslotone").innerHTML = Itemselected[0];
+        document.getElementById("perkslotone").innerHTML = Itemaddselected[0];
+        document.getElementById("perkslotone").innerHTML = Itemaddselected[1];
+}
+        else if (Itemselected[0] == "Med-kit") {
+        var itemaddshuffled = mapadd.sort(function(){
+            return .5 - Math.random()
+       });
+        var Itemaddselected = itemaddshuffled.slice(0, 1);
+        
+        document.getElementById("perkslotone").innerHTML = Itemselected[0];
+        document.getElementById("perkslotone").innerHTML = Itemaddselected[0];
+        document.getElementById("perkslotone").innerHTML = Itemaddselected[1];
+}
+        else if (Itemselected[0] == "Toolbox") {
+        var itemaddshuffled = mapadd.sort(function(){
+            return .5 - Math.random()
+       });
+        var Itemaddselected = itemaddshuffled.slice(0, 1);
+        
+        document.getElementById("perkslotone").innerHTML = Itemselected[0];
+        document.getElementById("perkslotone").innerHTML = Itemaddselected[0];
+        document.getElementById("perkslotone").innerHTML = Itemaddselected[1];
+}
+        else if (Itemselected[0] == "Flashlight") {
+        var itemaddshuffled = mapadd.sort(function(){
+            return .5 - Math.random()
+       });
+        var Itemaddselected = itemaddshuffled.slice(0, 1);
+        document.getElementById("perkslotone").innerHTML = Itemselected[0];
+        document.getElementById("perkslotone").innerHTML = Itemaddselected[0];
+        document.getElementById("perkslotone").innerHTML = Itemaddselected[1];
+}
+    else {
+        document.getElementById("Test").innerHTML = "Fejl";
+    }
+}
