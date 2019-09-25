@@ -91,7 +91,7 @@ var SurvImgSrc = ["<img src='css/image/roulette/survivor/AceInTheHole.png'>Ace I
 			  "<img src='css/image/roulette/survivor/WellMakeIt.png'>We'll Make It",
 			  "<img src='css/image/roulette/survivor/WereGonnaLiveForever.png'>Were Gonna Live Forever"];
 
-var Items = ["<img src='css/image/roulette/items/chinesefirecracker.png'>Chinese                  Firecracker",
+var Items = ["<img src='css/image/roulette/items/chinesefirecracker.png'>Chinese Firecracker",
              "<img src='css/image/roulette/items/winterPartyStarter.png'>Winter Party Starter",
              "<img src='css/image/roulette/items/partyPopper.png'>Party Popper",
              "<img src='css/image/roulette/items/willOwisp.png'>Will O'Wisp",
@@ -104,8 +104,6 @@ var Items = ["<img src='css/image/roulette/items/chinesefirecracker.png'>Chinese
              "<img src='css/image/roulette/items/sportFlashlight.png'>Sport Flashlight",
              "<img src='css/image/roulette/items/utilityFlashlight.png'>Utility Flashlight",
              "<img src='css/image/roulette/items/campingAidKit.png'>Camping Aid Kit",
-             "<img src='css/image/roulette/items/First Aid Kit'>",
-             "<img src='css/image/roulette/items/partyPopper.png'>Party Popper",
              "<img src='css/image/roulette/items/firstaidkit.png'>First Aid Kit",
              "<img src='css/image/roulette/items/emergencyMed-kit.png'>Emergency Med-Kit",
              "<img src='css/image/roulette/items/rangermed-kit.png'>Ranger Med-Kit",
@@ -288,6 +286,13 @@ function showFunc(x, y) {
 
     document.getElementById('random').style.display = RandButton[y];
 };
+function sb() {
+    document.body.style.backgroundImage = "url('wp2222325.jpg')";
+}
+
+function kb() {
+    document.body.style.backgroundImage = "url('killerb.jpg')";
+}
 
 function randomateSurvPerks() {
 
@@ -338,4 +343,3 @@ function randomateItems() {
     document.getElementById("perkslotthree").innerHTML = Itemselected[0];
     document.getElementById("perkslotfour").innerHTML = Itemselected[0];
 };
-
