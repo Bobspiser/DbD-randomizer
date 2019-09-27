@@ -12,20 +12,30 @@ var RandFunc = [function () {
     },
                function () {
         randomKillerAddons()
+    },
+                function () {
+        randomateoffsurv()            
+    },
+                function () {
+        randomateoffkill()
     }];
 
 var RandTitles = ["Random Survivor Perks",
                   "Random Items",
                   "Random Killer",
 				  "Random Killer Perks",
-                  "Random Killer Addons"
+                  "Random Killer Addons",
+                  "Random Offering Survivor",
+                  "Random Offering Killer"
                  ];
 
 var RandDesc = ["These are random survivor perks",
                 "These are random items",
 				"These are random killers",
                 "These are random killer perks",
-                "These are random killer addons"
+                "These are random killer addons",
+                "These are random Offerings for Survivor",
+                "These are random Offerings for Killer"
                ];
 
 var SurvImgSrc = ["<img src='css/image/roulette/survivor/AceInTheHole.png'>Ace In The Hole",
@@ -355,6 +365,63 @@ var flashlightadd = [
     "<img src='css/image/roulette/ItemAddons/Flashlightaddons/wideLens.png'>Wide Lens",
 ];
 
+
+var offeringsurv = [
+    "<img src='css/image/roulette/Offerings/Survivor/vigosShroud.png'>Vigo's Shroud",
+    "<img src='css/image/roulette/Offerings/Survivor/vigosJarOfSaltyLips.png'>Vigo's Jar Of Salty Lips",
+    "<img src='css/image/roulette/Offerings/Survivor/shroudOfUnion.png'>Shroud Of Union",
+    "<img src='css/image/roulette/Offerings/Survivor/tarnishedCoin.png'>Tarnished Coin",
+    "<img src='css/image/roulette/Offerings/Survivor/shroudOfBinding.png'>Shroud Of Binding",
+    "<img src='css/image/roulette/Offerings/Survivor/shinyCoin.png'>Shiny Coin",
+    "<img src='css/image/roulette/Offerings/Survivor/petrifiedOak.png'>Petrified Oak",
+    "<img src='css/image/roulette/Offerings/Survivor/saltPouch.png'>Salt Pouch",
+    "<img src='css/image/roulette/Offerings/Survivor/ivoryChalkPouch.png'>Ivory Chalk Pouch",
+    "<img src='css/image/roulette/Offerings/Survivor/hazyReagent.png'>Hazy Reagent",
+    "<img src='css/image/roulette/Offerings/Survivor/blackSaltStatuette.png'>Black Salt Statuette",
+    "<img src='css/image/roulette/Offerings/Survivor/chalkPouch.png'>Chalk Pouch",
+    "<img src='css/image/roulette/Offerings/Survivor/clearReagent.png'>CLear Reagent",
+    "<img src='css/image/roulette/Offerings/Survivor/creamChalkPouch.png'>Cream Chalk Pouch",
+    "<img src='css/image/roulette/Offerings/Survivor/murkyReagent.png'>Murky Reagent",
+    "<img src='css/image/roulette/Offerings/Survivor/whiteWard.png'>White Ward",
+    "<img src='css/image/roulette/Offerings/azarovsKey.png'>Azarov's Key",
+    "<img src='css/image/roulette/Offerings/charredWeddingPhotograph.png'>Charred Wedding Photograph",
+    "<img src='css/image/roulette/Offerings/damagedPhoto.png'>Damaged Photo",
+    "<img src='css/image/roulette/Offerings/granmasCookbook.png'>Granma's Cookbook",
+    "<img src='css/image/roulette/Offerings/hawkinsNationalLaboratoryID.png'>Hawkins National Laboratory ID",
+    "<img src='css/image/roulette/Offerings/heartLocket.png'>Heart Locket",
+    "<img src='css/image/roulette/Offerings/jigsawPiece.png'>Jigsaw Piece",
+    "<img src='css/image/roulette/Offerings/macMillansPhalanxBone.png'>MacMillan's Phalanx Bone",
+    "<img src='css/image/roulette/Offerings/shatteredGlasses.png'>Shattered Glasses",
+    "<img src='css/image/roulette/Offerings/strodeRealtyKey.png'>Strode Realty Key",
+    "<img src='css/image/roulette/Offerings/theLastMask.png'>The Last Mask",
+    "<img src='css/image/roulette/Offerings/thePiedPiper.png'>The Pied Piper",
+    "<img src='css/image/roulette/Offerings/yamaokaFamilyCrest.png'>Yamaoka Family Crest",
+]
+
+var offeringkill = [
+    "<img src='css/image/roulette/Offerings/azarovsKey.png'>Azarov's Key",
+    "<img src='css/image/roulette/Offerings/charredWeddingPhotograph.png'>Charred Wedding Photograph",
+    "<img src='css/image/roulette/Offerings/damagedPhoto.png'>Damaged Photo",
+    "<img src='css/image/roulette/Offerings/granmasCookbook.png'>Granma's Cookbook",
+    "<img src='css/image/roulette/Offerings/hawkinsNationalLaboratoryID.png'>Hawkins National Laboratory ID",
+    "<img src='css/image/roulette/Offerings/heartLocket.png'>Heart Locket",
+    "<img src='css/image/roulette/Offerings/jigsawPiece.png'>Jigsaw Piece",
+    "<img src='css/image/roulette/Offerings/macMillansPhalanxBone.png'>MacMillan's Phalanx Bone",
+    "<img src='css/image/roulette/Offerings/shatteredGlasses.png'>Shattered Glasses",
+    "<img src='css/image/roulette/Offerings/strodeRealtyKey.png'>Strode Realty Key",
+    "<img src='css/image/roulette/Offerings/theLastMask.png'>The Last Mask",
+    "<img src='css/image/roulette/Offerings/thePiedPiper.png'>The Pied Piper",
+    "<img src='css/image/roulette/Offerings/yamaokaFamilyCrest.png'>Yamaoka Family Crest",
+    "<img src='css/image/roulette/Offerings/Killer/blackWard.png'>Black Ward",
+    "<img src='css/image/roulette/Offerings/Killer/cypressMementoMori.png'>Cypress Memento Mori",
+    "<img src='css/image/roulette/Offerings/Killer/ebonyMementoMori.png'>Ebony Memento Mori",
+    "<img src='css/image/roulette/Offerings/Killer/ivoryMementoMori.png'>Ivory Memento Mori",
+    "<img src='css/image/roulette/Offerings/Killer/moldyOak.png'>Moldy Oak",
+    "<img src='css/image/roulette/Offerings/Killer/rottenOak.png'>Rotten Oak",
+    "<img src='css/image/roulette/Offerings/Killer/shroudOfSeparation.png'>Shroud Of Separation",
+    "<img src='css/image/roulette/Offerings/Killer/putridOak.png'>Putrid Oak",
+]
+
 var RandButton = ["none",
 				  "block"];
 
@@ -522,4 +589,28 @@ function randomateItems() {
     document.getElementById("perkslotthree").innerHTML = Firecrackerselected[0];
     document.getElementById("perkslotfour").innerHTML = Firecrackerselected[0];
     }
-}
+};
+
+function randomateoffsurv() {
+        var Offsurvshuffled = offeringsurv.sort(function () {
+            return .5 - Math.random()
+    });
+    var Offsurvselected = Offsurvshuffled.slice(0);
+
+    document.getElementById("perkslotone").innerHTML = Offsurvselected[0];
+    document.getElementById("perkslottwo").innerHTML = Offsurvselected[0];
+    document.getElementById("perkslotthree").innerHTML = Offsurvselected[0];
+    document.getElementById("perkslotfour").innerHTML = Offsurvselected[0];
+};
+
+function randomateoffkill() {
+        var Offkillshuffled = offeringkill.sort(function(){
+           return .5 - Math.random() 
+        });
+    var Offkillselected = Offkillshuffled.slice(0);
+    
+    document.getElementById("perkslotone").innerHTML = Offkillselected[0];
+    document.getElementById("perkslottwo").innerHTML = Offkillselected[0];
+    document.getElementById("perkslotthree").innerHTML = Offkillselected[0];
+    document.getElementById("perkslotfour").innerHTML = Offkillselected[0];
+};
