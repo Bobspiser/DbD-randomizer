@@ -22,16 +22,16 @@ var RandTitles = ["Random Survivor Perks",
                   "Random Killer Perks",
                   "Random Items",
                   "Random Killer",
-                  "Random Offerings for Killer",
-                  "Random Offerings for Survivor"
+                  "Random Offerings for Survivor",
+                  "Random Offerings for Killer"
                  ];
 
 var RandDesc = ["These are random survivor perks",
                 "These are random killer perks",
                 "These are random items",
 				"These are random killers",
-                "These are random Offerings for Killer",
                 "These are random Offerings for Survivor",
+                "These are random Offerings for Killer"
                ];
 
 var SurvImgSrc = [
