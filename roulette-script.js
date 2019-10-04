@@ -578,26 +578,26 @@ var ghostAdd = [
 ];
 
 var demoAdd = [
-    "<img src='css/image/roulette/kill/Demo/rottenPumpkin.png'>",
-    "<img src='css/image/roulette/kill/Demo/blackHeart.png'>",
-    "<img src='css/image/roulette/kill/Demo/ratLiver.png'>",
-    "<img src='css/image/roulette/kill/Demo/ratTail.png'>",
-    "<img src='css/image/roulette/kill/Demo/stickyLining.png'>",
-    "<img src='css/image/roulette/kill/Demo/viscousWebbing.png'>",
-    "<img src='css/image/roulette/kill/Demo/rottenGreenTripe.png'>",
-    "<img src='css/image/roulette/kill/Demo/mewsGuts.png'>",
-    "<img src='css/image/roulette/kill/Demo/barbsGlasses.png'>",
-    "<img src='css/image/roulette/kill/Demo/elevensSoda.png'>",
-    "<img src='css/image/roulette/kill/Demo/thornyVines.png'>",
-    "<img src='css/image/roulette/kill/Demo/brassCaseLighter.png'>",
-    "<img src='css/image/roulette/kill/Demo/violetWaxcap.png'>",
-    "<img src='css/image/roulette/kill/Demo/deerLung.png'>",
-    "<img src='css/image/roulette/kill/Demo/lifeguardWhistle.png'>",
-    "<img src='css/image/roulette/kill/Demo/vermilionWebcap.png'>",
-    "<img src='css/image/roulette/kill/Demo/upsideDownResin.png'>",
-    "<img src='css/image/roulette/kill/Demo/unknownEgg.png'>",
-    "<img src='css/image/roulette/kill/Demo/leproseLichen.png'>",
-    "<img src='css/image/roulette/kill/Demo/redMoss.png'>"
+    "<img src='css/image/roulette/kill/Demo/rottenPumpkin.png'>Rotten Pumpkin",
+    "<img src='css/image/roulette/kill/Demo/blackHeart.png'>Black Heart",
+    "<img src='css/image/roulette/kill/Demo/ratLiver.png'>Rat Liver",
+    "<img src='css/image/roulette/kill/Demo/ratTail.png'>Rat Tail",
+    "<img src='css/image/roulette/kill/Demo/stickyLining.png'>Sticky Lining",
+    "<img src='css/image/roulette/kill/Demo/viscousWebbing.png'>Viscous Webbing",
+    "<img src='css/image/roulette/kill/Demo/rottenGreenTripe.png'>Rotten Green Tripe",
+    "<img src='css/image/roulette/kill/Demo/mewsGuts.png'>Mew's Guts",
+    "<img src='css/image/roulette/kill/Demo/barbsGlasses.png'>Barb's Glasses",
+    "<img src='css/image/roulette/kill/Demo/elevensSoda.png'>Eleven's Soda",
+    "<img src='css/image/roulette/kill/Demo/thornyVines.png'>Thorny Vines",
+    "<img src='css/image/roulette/kill/Demo/brassCaseLighter.png'>Brass Casel Lighter",
+    "<img src='css/image/roulette/kill/Demo/violetWaxcap.png'>Violet Waxcap",
+    "<img src='css/image/roulette/kill/Demo/deerLung.png'>Deer Lung",
+    "<img src='css/image/roulette/kill/Demo/lifeguardWhistle.png'>Lifeguard Whistle",
+    "<img src='css/image/roulette/kill/Demo/vermilionWebcap.png'>Vermilion Webcap",
+    "<img src='css/image/roulette/kill/Demo/upsideDownResin.png'>Upside Down Resin",
+    "<img src='css/image/roulette/kill/Demo/unknownEgg.png'>Unknown Egg",
+    "<img src='css/image/roulette/kill/Demo/leproseLichen.png'>Leprose Lichen",
+    "<img src='css/image/roulette/kill/Demo/redMoss.png'>Red Moss"
 
 ];
 
