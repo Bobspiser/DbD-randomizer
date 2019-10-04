@@ -818,7 +818,7 @@ function randomateKiller() {
 
         document.getElementById("perkslotone").innerHTML = killerselected[0];
         document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
-        document.getElementById("perkslottthree").innerHTML = killerAddselected[1];
+        document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
         document.getElementById("perkslotfour").innerHTML = killerselected[0];
     } else if (killerselected[0] == "<img src='css/image/roulette/kill/EK.png'>The Nightmare") {
         var killerAddShuffled = freddyAdd.sort(function () {
@@ -988,6 +988,7 @@ function randomateKiller() {
         document.getElementById("perkslotone").innerHTML = killerselected[0];
         document.getElementById("perkslottwo").innerHTML = killerAddShuffled[0];
         document.getElementById("perkslotthree").innerHTML = killerAddShuffled[1];
+        document.getElementById("perkslotfour").innerHTML = killerselected[0];
     }
     
     else {
