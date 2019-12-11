@@ -12,7 +12,7 @@ var RandFunc = [function () {
     },
 
                 function () {
-        randomateoffsurv()            
+        randomateoffsurv()
     },
                 function () {
         randomateoffkill()
@@ -201,42 +201,42 @@ var Items = [
     "Flashlight",
     "Firecracker",
 ];
-    
-    var Medkit = [
+
+var Medkit = [
     "<img src='css/image/roulette/items/campingAidKit.png'>Camping Aid Kit",
     "<img src='css/image/roulette/items/emergencyMed-kit.png'>Emergency Med-Kit",
     "<img src='css/image/roulette/items/rangermed-kit.png'>Ranger Med-Kit",
     "<img src='css/image/roulette/items/allHallowsEveLunchbox.png'>All Hallow' Eve Lunchbox",
     "<img src='css/image/roulette/items/firstaidkit.png'>First Aid Kit"
 ];
-    var Key = [
+var Key = [
     "<img src='css/image/roulette/items/skeletonkey.png'>Skeleton Key",
     "<img src='css/image/roulette/items/dullkey.png'>Dull Key",
     "<img src='css/image/roulette/items/brokenkey.png'>Broken Key",
 ];
-    var Toolbox = [
+var Toolbox = [
     "<img src='css/image/roulette/items/worn-outTools.png'>Worn-Out Tools",
     "<img src='css/image/roulette/items/toolboxitem.png'>Toolbox",
     "<img src='css/image/roulette/items/mechanicsToolbox.png'>Mechanic's Toolbox",
     "<img src='css/image/roulette/items/commodioustoolbox.png'>Commodious Toolbox",
     "<img src='css/image/roulette/items/engineersToolbox.png'>Engineer's Toolbox",
-    "<img src='css/image/roulette/items/alexsToolbox.png'>Alex's Toolbox",    
+    "<img src='css/image/roulette/items/alexsToolbox.png'>Alex's Toolbox",
 ];
-    var Map = [
+var Map = [
     "<img src='css/image/roulette/items/rainbowmap.png'>Rainbow Map",
     "<img src='css/image/roulette/items/mapitem.png'>Map",
 ];
-    var Flashlight = [
+var Flashlight = [
     "<img src='css/image/roulette/items/flashlightItem.png'>Flashligt",
     "<img src='css/image/roulette/items/sportFlashlight.png'>Sport Flashlight",
     "<img src='css/image/roulette/items/utilityFlashlight.png'>Utility Flashlight",
     "<img src='css/image/roulette/items/willOwisp.png'>Will O'Wisp",
 ];
 
-    var Firecracker = [
+var Firecracker = [
     "<img src='css/image/roulette/items/chinesefirecracker.png'>Chinese Firecracker",
     "<img src='css/image/roulette/items/winterPartyStarter.png'>Winter Party Starter",
-    "<img src='css/image/roulette/items/partyPopper.png'>Party Popper"   
+    "<img src='css/image/roulette/items/partyPopper.png'>Party Popper"
 ];
 
 var keyadd = [
@@ -995,8 +995,7 @@ function randomateKiller() {
         document.getElementById("perkslottwo").innerHTML = killerAddShuffled[0];
         document.getElementById("perkslotthree").innerHTML = killerAddShuffled[1];
         document.getElementById("perkslotfour").innerHTML = killerselected[0];
-    }
-    else if (killerselected[0] == "<img src='css/image/roulette/kill/PIG.png'>The Pig") {
+    } else if (killerselected[0] == "<img src='css/image/roulette/kill/PIG.png'>The Pig") {
         var killerAddShuffled = pigAdd.sort(function () {
             return .5 - Math.random()
         });
@@ -1007,8 +1006,7 @@ function randomateKiller() {
         document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
         document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
         document.getElementById("perkslotfour").innerHTML = killerselected[0];
-    }
-    else {
+    } else {
         document.getElementById("test").innerHTML = "fejl"
     };
 }
@@ -1032,19 +1030,19 @@ function randomateItems() {
     });
     var Itemselected = Itemshuffled.slice(0);
 
-          
-    if (Itemshuffled[0] == "Key" ) {
-        
-        var Keyshuffled = Key.sort(function(){
+
+    if (Itemshuffled[0] == "Key") {
+
+        var Keyshuffled = Key.sort(function () {
             return .5 - Math.random()
         });
-        
+
         var Keyselected = Keyshuffled.slice(0);
-        var keyaddshuffled = keyadd.sort(function(){
+        var keyaddshuffled = keyadd.sort(function () {
             return .5 - Math.random()
-       });
+        });
         var Itemaddselected = keyaddshuffled.slice(0, 1);
-        
+
         document.getElementById("perkslotone").innerHTML = Itemselected[0];
         document.getElementById("perkslotone").innerHTML = Itemaddselected[0];
         document.getElementById("perkslotone").innerHTML = Itemaddselected[1];
@@ -1052,92 +1050,84 @@ function randomateItems() {
         document.getElementById("perkslottwo").innerHTML = keyaddshuffled[0];
         document.getElementById("perkslotthree").innerHTML = keyaddshuffled[1];
         document.getElementById("perkslotfour").innerHTML = Keyselected[0];
-}
+    } else if (Itemshuffled[0] == "Map") {
 
-    else if (Itemshuffled[0] == "Map") {
-        
-        var Mapshuffled = Map.sort(function(){
+        var Mapshuffled = Map.sort(function () {
             return .5 - Math.random()
         });
-        
+
         var Mapselected = Mapshuffled.slice(0);
-        var mapaddshuffled = mapadd.sort(function(){
+        var mapaddshuffled = mapadd.sort(function () {
             return .5 - Math.random()
-       });
+        });
         var Itemaddselected = mapaddshuffled.slice(0, 1);
-        
+
         document.getElementById("perkslotone").innerHTML = Mapselected[0];
         document.getElementById("perkslottwo").innerHTML = mapaddshuffled[0];
         document.getElementById("perkslotthree").innerHTML = mapaddshuffled[1];
         document.getElementById("perkslotfour").innerHTML = Mapselected[0];
-}
-        else if (Itemshuffled[0] == "Medkit") {
-            
-        var Medkitshuffled = Medkit.sort(function(){
+    } else if (Itemshuffled[0] == "Medkit") {
+
+        var Medkitshuffled = Medkit.sort(function () {
             return .5 - Math.random()
-       });
-            
+        });
+
         var Medkitselected = Medkitshuffled.slice(0);
-        var medkitaddshuffled = medkitadd.sort(function(){
+        var medkitaddshuffled = medkitadd.sort(function () {
             return .5 - Math.random()
         });
         var Itemaddselected = medkitaddshuffled.slice(0, 1);
-        
+
         document.getElementById("perkslotone").innerHTML = Medkitselected[0];
         document.getElementById("perkslottwo").innerHTML = medkitaddshuffled[0];
         document.getElementById("perkslotthree").innerHTML = medkitaddshuffled[1];
         document.getElementById("perkslotfour").innerHTML = Medkitselected[0];
-}
+    } else if (Itemshuffled[0] == "Toolbox") {
 
-        else if (Itemshuffled[0] == "Toolbox") {
-            
-            var Toolboxshuffled = Toolbox.sort(function(){
-                return .5 - Math.random() 
-            });
-        var Toolboxselected = Toolboxshuffled.slice(0);
-        var toolboxaddshuffled = toolboxadd.sort(function(){
+        var Toolboxshuffled = Toolbox.sort(function () {
             return .5 - Math.random()
-       });
+        });
+        var Toolboxselected = Toolboxshuffled.slice(0);
+        var toolboxaddshuffled = toolboxadd.sort(function () {
+            return .5 - Math.random()
+        });
         var Itemaddselected = toolboxaddshuffled.slice(0, 1);
-        
+
         document.getElementById("perkslotone").innerHTML = Toolboxselected[0];
         document.getElementById("perkslottwo").innerHTML = toolboxaddshuffled[0];
         document.getElementById("perkslotthree").innerHTML = toolboxaddshuffled[1];
         document.getElementById("perkslotfour").innerHTML = Toolboxselected[0];
-}
+    } else if (Itemshuffled[0] == "Flashlight") {
 
-        else if (Itemshuffled[0] == "Flashlight") {
-            
-            var Flashlightshuffled = Flashlight.sort(function(){
-                return .5 - Math.random() 
-            });
-        var Flashlightselected = Flashlightshuffled.slice(0);
-        var flashlightaddshuffled = flashlightadd.sort(function(){
+        var Flashlightshuffled = Flashlight.sort(function () {
             return .5 - Math.random()
-       });
+        });
+        var Flashlightselected = Flashlightshuffled.slice(0);
+        var flashlightaddshuffled = flashlightadd.sort(function () {
+            return .5 - Math.random()
+        });
 
         var Itemaddselected = flashlightaddshuffled.slice(0, 1);
         document.getElementById("perkslotone").innerHTML = Flashlightselected[0];
         document.getElementById("perkslottwo").innerHTML = flashlightaddshuffled[0];
         document.getElementById("perkslotthree").innerHTML = flashlightaddshuffled[1];
         document.getElementById("perkslotfour").innerHTML = Flashlightselected[0];
-}
-    else if (Itemshuffled[0] == "Firecracker") {
-        var Firecrackershuffled = Firecracker.sort(function(){
+    } else if (Itemshuffled[0] == "Firecracker") {
+        var Firecrackershuffled = Firecracker.sort(function () {
             return .5 - Math.random()
         });
         var Firecrackerselected = Firecrackershuffled.slice(0);
-        
-    document.getElementById("perkslotone").innerHTML = Firecrackerselected[0];
-    document.getElementById("perkslottwo").innerHTML = Firecrackerselected[0];
-    document.getElementById("perkslotthree").innerHTML = Firecrackerselected[0];
-    document.getElementById("perkslotfour").innerHTML = Firecrackerselected[0];
+
+        document.getElementById("perkslotone").innerHTML = Firecrackerselected[0];
+        document.getElementById("perkslottwo").innerHTML = Firecrackerselected[0];
+        document.getElementById("perkslotthree").innerHTML = Firecrackerselected[0];
+        document.getElementById("perkslotfour").innerHTML = Firecrackerselected[0];
     }
 }
 
-    function randomateoffsurv() {
-        var Offsurvshuffled = offeringsurv.sort(function () {
-            return .5 - Math.random()
+function randomateoffsurv() {
+    var Offsurvshuffled = offeringsurv.sort(function () {
+        return .5 - Math.random()
     });
     var Offsurvselected = Offsurvshuffled.slice(0);
 
@@ -1148,11 +1138,11 @@ function randomateItems() {
 };
 
 function randomateoffkill() {
-        var Offkillshuffled = offeringkill.sort(function(){
-           return .5 - Math.random() 
-        });
+    var Offkillshuffled = offeringkill.sort(function () {
+        return .5 - Math.random()
+    });
     var Offkillselected = Offkillshuffled.slice(0);
-    
+
     document.getElementById("perkslotone").innerHTML = Offkillselected[0];
     document.getElementById("perkslottwo").innerHTML = Offkillselected[0];
     document.getElementById("perkslotthree").innerHTML = Offkillselected[0];
