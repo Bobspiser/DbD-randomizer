@@ -18,6 +18,7 @@ var RandFunc = [function () {
         randomateoffkill()
     }];
 
+// The different titles, gets chosen with click of the right button
 var RandTitles = ["Random Survivor Perks",
                   "Random Killer Perks",
                   "Random Items",
@@ -26,6 +27,7 @@ var RandTitles = ["Random Survivor Perks",
                   "Random Offerings for Killer"
                  ];
 
+// The different descriptions, gets chosen the same way.
 var RandDesc = ["These are random survivor perks",
                 "These are random killer perks",
                 "These are random items",
@@ -34,6 +36,8 @@ var RandDesc = ["These are random survivor perks",
                 "These are random Offerings for Killer"
                ];
 
+
+/*----------------------------IMG------------------------------*/
 var SurvImgSrc = [
     "<img src='css/image/roulette/survivor/AceInTheHole.png'>Ace In The Hole",
 	"<img src='css/image/roulette/survivor/Adrenaline.png'>Adrenaline",
@@ -762,18 +766,23 @@ var offeringkill = [
     "<img src='css/image/roulette/Offerings/Killer/shroudOfSeparation.png'>Shroud Of Separation",
     "<img src='css/image/roulette/Offerings/Killer/putridOak.png'>Putrid Oak",
 ]
+/*---------------------------------------------------------------*/
+
 
 var RandButton = ["none",
 				  "block"];
 
+// Surviver Background
 function sb() {
     document.body.style.backgroundImage = "url('wp2222325.jpg')";
 }
 
+// Killer background
 function kb() {
     document.body.style.backgroundImage = "url('killerb.jpg')";
 }
 
+// Shows the information about the page in and show images when randomizing
 function showFunc(x, y) {
     document.getElementById("rand_title").innerHTML = RandTitles[x];
     document.getElementById("rand_desc").innerHTML = RandDesc[x];
@@ -792,13 +801,17 @@ function showFunc(x, y) {
     document.getElementById('random').style.display = RandButton[y];
 };
 
+// The random survivor perks function
 function randomateSurvPerks() {
-
+    
+    // Shuffles the array and returns it
     var Survshuffled = SurvImgSrc.sort(function () {
         return .5 - Math.random()
     });
+    // Select the first 4 in the new array 
     var Survselected = Survshuffled.slice(0, 4);
 
+    // Puts the first 4 in slots made in html.
     document.getElementById("perkslotone").innerHTML = Survselected[0];
     document.getElementById("perkslottwo").innerHTML = Survselected[1];
     document.getElementById("perkslotthree").innerHTML = Survselected[2];
@@ -806,15 +819,14 @@ function randomateSurvPerks() {
 
 };
 
+// The on for killer
 function randomateKiller() {
     var killershuffled = Killer.sort(function () {
         return .5 - Math.random()
     });
     var killerselected = killershuffled.slice(1);
 
-    // document.getElementById("test").innerHTML = killershuffled;
-    // document.getElementById("test2").innerHTML = killerselected;
-
+    // Depending on what gets selected in the random killer randomize the addons.
     if (killerselected[0] == "<img src='css/image/roulette/kill/BE.png'>The Huntress") {
         var killerAddShuffled = huntressAdd.sort(function () {
             return .5 - Math.random()
@@ -1011,6 +1023,7 @@ function randomateKiller() {
     };
 }
 
+// The one for killer perks
 function randomateKillPerks() {
     var Killshuffled = KillImgSrc.sort(function () {
         return .5 - Math.random()
@@ -1023,7 +1036,7 @@ function randomateKillPerks() {
     document.getElementById("perkslotfour").innerHTML = Killselected[3];
 };
 
-
+// The one for survivor items
 function randomateItems() {
     var Itemshuffled = Items.sort(function () {
         return .5 - Math.random()
@@ -1125,6 +1138,7 @@ function randomateItems() {
     }
 }
 
+// The survivor offerings
 function randomateoffsurv() {
     var Offsurvshuffled = offeringsurv.sort(function () {
         return .5 - Math.random()
@@ -1137,6 +1151,7 @@ function randomateoffsurv() {
     document.getElementById("perkslotfour").innerHTML = Offsurvselected[0];
 };
 
+// The killer offerings
 function randomateoffkill() {
     var Offkillshuffled = offeringkill.sort(function () {
         return .5 - Math.random()
