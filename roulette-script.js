@@ -771,7 +771,7 @@ function sb() {
 }
 
 function kb() {
-    document.body.style.backgroundImage = "url('killerb.jpg')";
+    document.body.style.backgroundImage = "url('background.jpg')";
 }
 
 function showFunc(x, y) {
