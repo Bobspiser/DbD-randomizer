@@ -24,6 +24,7 @@ var RandTitles = ["Random Survivor Perks",
                   "Random Killer",
                   "Random Offerings for Survivor",
                   "Random Offerings for Killer",
+                  "Random Offerings for Killer"
                  ];
 
 var RandDesc = ["These are random survivor perks",
@@ -32,6 +33,7 @@ var RandDesc = ["These are random survivor perks",
 				"These are random killers",
                 "These are random Offerings for Survivor",
                 "These are random Offerings for Killer",
+                "These are random Offerings for Killer"
                ];
 
 var SurvImgSrc = [
@@ -126,7 +128,8 @@ var Killer = [
      "<img src='css/image/roulette/kill/SH.png'>The Shape",
      "<img src='css/image/roulette/kill/TR.png'>The Trapper",
      "<img src='css/image/roulette/kill/WR.png'>The Wraith",
-     "<img src='css/image/roulette/kill/PIG.png'>The Pig"
+     "<img src='css/image/roulette/kill/PIG.png'>The Pig",
+     "<img src='css/image/roulette/kill/ON.png'>The Oni"
 ];
 
 var KillImgSrc = [
@@ -192,7 +195,11 @@ var KillImgSrc = [
     "<img src='css/image/roulette/killer/Thanatophobia.png'>Thanatophobia",
     "<img src='css/image/roulette/killer/UnnervingPresence.png'>Unnerving Presence",
     "<img src='css/image/roulette/killer/Unrelenting.png'>Unrelenting",
-    "<img src='css/image/roulette/killer/Whispers.png'>Whispers"];
+    "<img src='css/image/roulette/killer/Whispers.png'>Whispers",
+    "<img src='css/image/roulette/killer/BloodEcho.png'>Blood Echo",
+    "<img src='css/image/roulette/killer/ZanshinTactics.png'>Zanshin Tactics",
+    "<img src='css/image/roulette/killer/Nemesis.png'>Nemesis"];
+    
 var Items = [
     "Medkit",
     "Map",
@@ -707,6 +714,29 @@ var pigAdd = [
     "<img src='css/image/roulette/kill/Pig/workshopGrease.png'>Workshop Grease"
 ];
 
+var oniAdd = [
+    "<img src='css/image/roulette/kill/Oni/yakuyokeTalisman.png'>Yakuyoke Talisman",
+    "<img src='css/image/roulette/kill/Oni/rottingRope.png'>Rotting Rope",
+    "<img src='css/image/roulette/kill/Oni/crackedSakazuki.png'>Cracked Sakazuki",
+    "<img src='css/image/roulette/kill/Oni/blackenedToenail.png'>Blackened Toenail",
+    "<img src='css/image/roulette/kill/Oni/polishedMaedate.png'>Polished Maedate",
+    "<img src='css/image/roulette/kill/Oni/inkLion.png'>Ink Lion",
+    "<img src='css/image/roulette/kill/Oni/chippedSaihai.png'>Chipped Saihai",
+    "<img src='css/image/roulette/kill/Oni/childsWoodenSword.png'>Childs Wooden Sword",
+    "<img src='css/image/roulette/kill/Oni/bloodySash.png'>Bloody Sash",
+    "<img src='css/image/roulette/kill/Oni/yamaokaSashimono.png'>Yamaoka Sashimono",
+    "<img src='css/image/roulette/kill/Oni/woodenOniMask.png'>Wooden Oni Mask",
+    "<img src='css/image/roulette/kill/Oni/shatteredWakizashi.png'>Shattered Wakizashi",
+    "<img src='css/image/roulette/kill/Oni/scalpedTopknot.png'>Scalped Topknot",
+    "<img src='css/image/roulette/kill/Oni/kanai-AnzenTalisman.png'>Kanai-Anzen Talisman",
+    "<img src='css/image/roulette/kill/Oni/tearSoakedTenugui.png'>Tear Soaked Tengui",
+    "<img src='css/image/roulette/kill/Oni/splinteredHull.png'>Splintered Hull",
+    "<img src='css/image/roulette/kill/Oni/lionFang.png'>Lion Fang",
+    "<img src='css/image/roulette/kill/Oni/akitosCrutch.png'>Akitos Crutch",
+    "<img src='css/image/roulette/kill/Oni/renjirosBloodyGlove.png'>Renjiros Bloody Glove",
+    "<img src='css/image/roulette/kill/Oni/iridescentFamilyCrest.png'>Iridescent Family Crest"
+];
+
 var offeringsurv = [
     "<img src='css/image/roulette/Offerings/Survivor/vigosShroud.png'>Vigo's Shroud",
     "<img src='css/image/roulette/Offerings/Survivor/vigosJarOfSaltyLips.png'>Vigo's Jar Of Salty Lips",
@@ -771,7 +801,7 @@ function sb() {
 }
 
 function kb() {
-    document.body.style.backgroundImage = "url('killerb.jpg')";
+    document.body.style.backgroundImage = "url('Killerback.jpg')";
 }
 
 function showFunc(x, y) {
@@ -1007,7 +1037,20 @@ function randomateKiller() {
         document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
         document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
         document.getElementById("perkslotfour").innerHTML = killerselected[0];
-    }
+    } else if (killerselected[0] == "<img src='css/image/roulette/kill/ON.png'>The Oni") {
+        var killerAddShuffled = oniAdd.sort(function () {
+            return .5 - Math.random()
+        });
+
+        var killerAddselected = killerAddShuffled.slice(0, 2);
+
+
+
+        document.getElementById("perkslotone").innerHTML = killerselected[0];
+        document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
+        document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
+        document.getElementById("perkslotfour").innerHTML = killerselected[0];
+    } 
     else {
         document.getElementById("test").innerHTML = "fejl"
     };
