@@ -31,7 +31,7 @@ var RandTitles = ["Random Survivor Perks",
 // The different descriptions, gets chosen the same way.
 var RandDesc = ["These are random survivor perks",
                 "These are random killer perks",
-                "These are random items",
+                "These are random items","Select the killers you own",
 				"These are random killers",
                 "These are random Offerings for Survivor",
                 "These are random Offerings for Killer",
@@ -111,7 +111,33 @@ var SurvImgSrc = [
 	"<img src='css/image/roulette/survivor/Unbreakable.png'>Unbreakable",
 	"<img src='css/image/roulette/survivor/UrbanEvasion.png'>Urban Evasion",
     "<img src='css/image/roulette/survivor/WellMakeIt.png'>We'll Make It",
-    "<img src='css/image/roulette/survivor/WereGonnaLiveForever.png'>Were Gonna Live Forever"];
+    "<img src='css/image/roulette/survivor/WereGonnaLiveForever.png'>Were Gonna Live Forever",
+    "<img src='css/image/roulette/survivor/anyMeansNecessary.png'>Any Mean's Necessary",
+    "<img src='css/image/roulette/survivor/breakout.png'>Breakout",
+    "<img src='css/image/roulette/survivor/luckyBreak.png'>Lucky Break",
+    "<img src='css/image/roulette/survivor/forThePeople.png'>For the People",
+    "<img src='css/image/roulette/survivor/offTheRecord.png'>Off the Record",
+    "<img src='css/image/roulette/survivor/redHerring.png'>Red Herring",
+    "<img src='css/image/roulette/survivor/bloodPact.png'>Blood Pact",
+    "<img src='css/image/roulette/survivor/repressedAlliance.png'>Repressed Alliance",
+    "<img src='css/image/roulette/survivor/soulGuard.png'>Sould Guard",
+    "<img src='css/image/roulette/survivor/builtToLast.png'>Built to Last",
+    "<img src='css/image/roulette/survivor/desperateMeasures.png'>Desperate Measures",
+    "<img src='css/image/roulette/survivor/visionary.png'>Visionary",
+    "<img src='css/image/roulette/survivor/appraisal.png'>Appraisal",
+    "<img src='css/image/roulette/survivor/deception.png'>Deception",
+    "<img src='css/image/roulette/survivor/powerStruggle.png'>Power Struggle",
+    "<img src='css/image/roulette/survivor/fastTrack.png'>Fast Track",
+    "<img src='css/image/roulette/survivor/self-Preservation.png'>Self-Preservation",
+    "<img src='css/image/roulette/survivor/smashHit.png'>Smash Hit",
+    "<img src='css/image/roulette/survivor/blastMine.png'>Blast Mine",
+    "<img src='css/image/roulette/survivor/counterforce.png'>Counterforce",
+    "<img src='css/image/roulette/survivor/resurgence.png'>Resurgence",
+    "<img src='css/image/roulette/survivor/biteTheBullet.png'>Bite the Bullet",
+    "<img src='css/image/roulette/survivor/flashbang.png'>Flashbang",
+    "<img src='css/image/roulette/survivor/rookieSpirit.png'>Rookie Spirit"
+
+];
 
 
 
@@ -133,7 +159,15 @@ var Killer = [
      "<img src='css/image/roulette/kill/TR.png'>The Trapper",
      "<img src='css/image/roulette/kill/WR.png'>The Wraith",
      "<img src='css/image/roulette/kill/PIG.png'>The Pig",
-     "<img src='css/image/roulette/kill/ON.png'>The Oni"
+     "<img src='css/image/roulette/kill/ON.png'>The Oni",
+     "<img src='css/image/roulette/kill/K19.png'>The Deathslinger",
+     "<img src='css/image/roulette/kill/K20.png'>The Executioner",
+     "<img src='css/image/roulette/kill/K21.png'>The Blight",
+     "<img src='css/image/roulette/kill/K22.png'>The Twins",
+     "<img src='css/image/roulette/kill/K23.png'>The Trickster",
+     "<img src='css/image/roulette/kill/K24.png'>The Nemesis",
+     "<img src='css/image/roulette/kill/K25.png'>Pinhead",
+     "<img src='css/image/roulette/kill/K26.png'>The Artist",
 ];
 
 var KillImgSrc = [
@@ -202,7 +236,32 @@ var KillImgSrc = [
     "<img src='css/image/roulette/killer/Whispers.png'>Whispers",
     "<img src='css/image/roulette/killer/BloodEcho.png'>Blood Echo",
     "<img src='css/image/roulette/killer/ZanshinTactics.png'>Zanshin Tactics",
-    "<img src='css/image/roulette/killer/Nemesis.png'>Nemesis"];
+    "<img src='css/image/roulette/killer/Nemesis.png'>Nemesis",
+    "<img src='css/image/roulette/killer/Gearhead.png'>Gearhead",
+    "<img src='css/image/roulette/killer/DeadMansSwitch.png'>Dead Man's Switch",
+    "<img src='css/image/roulette/killer/HexRetribution.png'>Hex: Retribution",
+    "<img src='css/image/roulette/killer/ForcedPenance.png'>Forced Penance",
+    "<img src='css/image/roulette/killer/TrailOfTorment.png'>Trail of Tormen",
+    "<img src='css/image/roulette/killer/Deathbound.png'>Deathbound",
+    "<img src='css/image/roulette/killer/dragonsGrip.png'>Dragon's Grip",
+    "<img src='css/image/roulette/killer/hexBloodFavour.png'>Hex: Blood Favour",
+    "<img src='css/image/roulette/killer/hexUndying.png'>Hex: Undying",
+    "<img src='css/image/roulette/killer/hoarder.png'>Hoarder",
+    "<img src='css/image/roulette/killer/oppression.png'>Oppression",
+    "<img src='css/image/roulette/killer/coupDeGrace.png'>Coup de Grace",
+    "<img src='css/image/roulette/killer/starstruck.png'>Starstruck",
+    "<img src='css/image/roulette/killer/hexCrowdControl.png'>Hex: Crowd Control",
+    "<img src='css/image/roulette/killer/noWayOut.png'>No Way Out",
+    "<img src='css/image/roulette/killer/lethalPursuer.png'>Lethal Pursuer",
+    "<img src='css/image/roulette/killer/eruption.png'>Eruption",
+    "<img src='css/image/roulette/killer/hysteria.png'>Hysteria",
+    "<img src='css/image/roulette/killer/hexPlaything.png'>Hex: Plaything",
+    "<img src='css/image/roulette/killer/scourgeHookGiftOfPain.png'>Scourge Hook: Gift Of Pain",
+    "<img src='css/image/roulette/killer/no-image.png'>Deadlock",
+    "<img src='css/image/roulette/killer/no-image.png'>Grim Embrace",
+    "<img src='css/image/roulette/killer/no-image.png'>Scourge Hook: Pain Resonance",
+    "<img src='css/image/roulette/killer/no-image.png'>Hex: Pentimento",
+];
     
 var Items = [
     "Medkit",
@@ -320,26 +379,26 @@ var flashlightadd = [
 ];
 var huntressAdd = [
     "<img src='css/image/roulette/kill/Huntress/coarseStone.png'>Coarse Stone",
-    "<img src='css/image/roulette/kill/Huntress/berusToxin.png'>Berus Toxin",
+    "<img src='css/image/roulette/kill/Huntress/oakHaft.png'>Oak Haft",
     "<img src='css/image/roulette/kill/Huntress/bandagedHaft.png'>Bandaged Haft",
     "<img src='css/image/roulette/kill/Huntress/amanitaToxin.png'>Amanita Toxin",
-    "<img src='css/image/roulette/kill/Huntress/yewSeedBrew.png'>Yes Seed Brew",
+    "<img src='css/image/roulette/kill/Huntress/roseRoot.png'>Rose Root",
     "<img src='css/image/roulette/kill/Huntress/shinyPin.png'>Shiny Pin",
     "<img src='css/image/roulette/kill/Huntress/oakHaft.png'>Oak haft",
     "<img src='css/image/roulette/kill/Huntress/mannaGrassBraid.png'>Manna Grass Braid",
     "<img src='css/image/roulette/kill/Huntress/leatherLoop.png'>Leather Loop",
-    "<img src='css/image/roulette/kill/Huntress/fineStone.png'>Fine Stone",
+    "<img src='css/image/roulette/kill/Huntress/yellowedCloth.png'>Yellowed Cloth",
     "<img src='css/image/roulette/kill/Huntress/deerskinGloves.png'>Deer Skin Glove",
-    "<img src='css/image/roulette/kill/Huntress/yewSeedConcoction.png'>Yew Seed Concotion",
+    "<img src='css/image/roulette/kill/Huntress/soldiersPuttee.png'>Soldiers Puttee",
     "<img src='css/image/roulette/kill/Huntress/venomousConcoction.png'>Venomous Concotion",
     "<img src='css/image/roulette/kill/Huntress/rustyHead.png'>Rusty Head",
-    "<img src='css/image/roulette/kill/Huntress/pungentPhial.png'>Pungent Phial",
+    "<img src='css/image/roulette/kill/Huntress/woodenFox.png'>Wooden Fox",
     "<img src='css/image/roulette/kill/Huntress/flowerBabushka.png'>Flower Babushka",
     "<img src='css/image/roulette/kill/Huntress/infantryBelt.png'>Infantry Belt",
     "<img src='css/image/roulette/kill/Huntress/glowingConcoction.png'>Glowing Concotion",
     "<img src='css/image/roulette/kill/Huntress/begrimedHead.png'>Begrimed Head",
-    "<img src='css/image/roulette/kill/Huntress/iridescentHead.png'>Iridescent Head"
-
+    "<img src='css/image/roulette/kill/Huntress/iridescentHead.png'>Iridescent Head",
+    "<img src='css/image/roulette/kill/Huntress/weightedHead.png'>Weighted Head"
 ];
 
 var cannibalAdd = [
@@ -361,6 +420,7 @@ var cannibalAdd = [
     "<img src='css/image/roulette/kill/Bubba/carburettorTuningGuide.png'>Carburettor Tuning Guide",
     "<img src='css/image/roulette/kill/Bubba/begrimedChains.png'>Begrimed Chains",
     "<img src='css/image/roulette/kill/Bubba/award-winningChilli.png'>Award Winning Chilli",
+    "<img src='css/image/roulette/kill/Bubba/iridescentFlesh.png'>Iridescent Flesh"
 ];
 
 var doctorAdd = [
@@ -380,10 +440,10 @@ var doctorAdd = [
     "<img src='css/image/roulette/kill/Doctor/disciplineClassIII.png'>Discipline Class III",
     "<img src='css/image/roulette/kill/Doctor/restraintCartersNotes.png'>Restraint Carter Notes",
     "<img src='css/image/roulette/kill/Doctor/orderCartersNotes.png'>Order Carter Notes",
-    "<img src='css/image/roulette/kill/Doctor/obedienceCartersNotes.png'>Obedience Carter Notes",
     "<img src='css/image/roulette/kill/Doctor/disciplineCartersNotes.png'>Discipline Carters Notes",
     "<img src='css/image/roulette/kill/Doctor/calmCartersNotes.png'>Calm Carters Notes",
-    "<img src='css/image/roulette/kill/Doctor/iridescentKing.png'>Iridescent King"
+    "<img src='css/image/roulette/kill/Doctor/iridescentKing.png'>Iridescent King",
+    "<img src='css/image/roulette/kill/Doctor/iridescentQueen.png'>Iridescent Queen"
 ];
 
 var freddyAdd = [
@@ -414,7 +474,7 @@ var clownAdd = [
     "<img src='css/image/roulette/kill/Clown/smellyInnerSoles.png'>Smelly Inner Soles",
     "<img src='css/image/roulette/kill/Clown/robinFeather.png'>Robin Feather",
     "<img src='css/image/roulette/kill/Clown/fingerlessParadeGloves.png'>Fingerless Parade Gloves",
-    "<img src='css/image/roulette/kill/Clown/ether5Vol.png'>Ether 5 VOL",
+    "<img src='css/image/roulette/kill/Clown/partyBottle.png'>Party Bottle",
     "<img src='css/image/roulette/kill/Clown/thickCorkStopper.png'>Thick Cork Stopper",
     "<img src='css/image/roulette/kill/Clown/stickySodaBottle.png'>Sticky Soda Bottle",
     "<img src='css/image/roulette/kill/Clown/starlingFeather.png'>Starling Feater",
@@ -423,7 +483,7 @@ var clownAdd = [
     "<img src='css/image/roulette/kill/Clown/vhsPorn.png'>VHS Porn",
     "<img src='css/image/roulette/kill/Clown/sulphuricAcidVial.png'>Sulphuric Acid",
     "<img src='css/image/roulette/kill/Clown/flaskOfBleach.png'>Flask Of Bleach",
-    "<img src='css/image/roulette/kill/Clown/ether10Vol.png'>Ether 10 VOL",
+    "<img src='css/image/roulette/kill/Clown/spiritOfHartshorn.png'>Spirit Of Hartshorn",
     "<img src='css/image/roulette/kill/Clown/bottleOfChloroform.png'>Bottle Of Chloroform",
     "<img src='css/image/roulette/kill/Clown/garishMake-UpKit.png'>Garish Make-Upkit",
     "<img src='css/image/roulette/kill/Clown/ether15Vol.png'>Ether 15 VOL",
@@ -459,25 +519,25 @@ var hag = [
 ];
 
 var hillAdd = [
-    "<img src='css/image/roulette/kill/Hillbilly/vegetableOil.png'>Vegetable Oil",
-    "<img src='css/image/roulette/kill/Hillbilly/sparkPlug.png'>Spark Plug",
-    "<img src='css/image/roulette/kill/Hillbilly/chainsawFile.png'>Chansaw File",
+    "<img src='css/image/roulette/kill/Hillbilly/apexMuffler.png'>Apex Muffler",
+    "<img src='css/image/roulette/kill/Hillbilly/bigBuckle.png'>Big Buckle",
+    "<img src='css/image/roulette/kill/Hillbilly/blackGrease.png'>Black Grease",
     "<img src='css/image/roulette/kill/Hillbilly/spikedBoots.png'>Spiked Boots",
-    "<img src='css/image/roulette/kill/Hillbilly/speedLimiter.png'>Speed Limiter",
-    "<img src='css/image/roulette/kill/Hillbilly/shopLubricant.png'>Shop Lubricant",
-    "<img src='css/image/roulette/kill/Hillbilly/primerBulb.png'>Primer Bulb",
-    "<img src='css/image/roulette/kill/Hillbilly/longGuideBar.png'>Long Guide Bar",
-    "<img src='css/image/roulette/kill/Hillbilly/homemadeMuffler.png'>Homemade Muffler",
-    "<img src='css/image/roulette/kill/Hillbilly/grislyChains.png'>Grisly Chains",
-    "<img src='css/image/roulette/kill/Hillbilly/depthGaugeRake.png'>Depth Gauge Rake",
-    "<img src='css/image/roulette/kill/Hillbilly/deathEngravings.png'>Death Engravings",
-    "<img src='css/image/roulette/kill/Hillbilly/theThompsonsMix.png'>The Thompsons Mix",
-    "<img src='css/image/roulette/kill/Hillbilly/rustedChains.png'>Rusted Chains",
-    "<img src='css/image/roulette/kill/Hillbilly/lightChassis.png'>Light Chassis",
+    "<img src='css/image/roulette/kill/Hillbilly/dadsBoots.png'>Dads Boots",
+    "<img src='css/image/roulette/kill/Hillbilly/heavyClutch.png'>Heavy Clutch",
+    "<img src='css/image/roulette/kill/Hillbilly/iridescentBrick.png'>Iridescent Brick",
+    "<img src='css/image/roulette/kill/Hillbilly/junkyardAirFilter.png'>Junkyard Air Filter",
+    "<img src='css/image/roulette/kill/Hillbilly/leafyMash.png'>Leafy Mash",
+    "<img src='css/image/roulette/kill/Hillbilly/loProChains.png'>Lo Pro Chains",
+    "<img src='css/image/roulette/kill/Hillbilly/lowKickbackChains.png'>Low Kickback Chains",
+    "<img src='css/image/roulette/kill/Hillbilly/deathEngravings.png'>Death Engravings", 
+    "<img src='css/image/roulette/kill/Hillbilly/mothersHelpers.png'>Mothers Helpers",
+    "<img src='css/image/roulette/kill/Hillbilly/off-brandMotorOil.png'>Off-brand Motor Oil",
+    "<img src='css/image/roulette/kill/Hillbilly/pighouseGloves.png'>Pighouse Gloves",
     "<img src='css/image/roulette/kill/Hillbilly/doomEngravings.png'>Doom Engravings",
-    "<img src='css/image/roulette/kill/Hillbilly/carburettorTuningGuide.png'>Carburettor Tuning Guide",
-    "<img src='css/image/roulette/kill/Hillbilly/thompsonsMoonshine.png'>Thompsons Moonshine",
-    "<img src='css/image/roulette/kill/Hillbilly/begrimedChains.png'>Begrimed Chains"
+    "<img src='css/image/roulette/kill/Hillbilly/puncturedMuffler.png'>Punctured Muffler",
+    "<img src='css/image/roulette/kill/Hillbilly/steelToeBoots.png'>Steel Toe Boots",
+    "<img src='css/image/roulette/kill/Hillbilly/tunedCarburettor.png'>Tuned Carburettor"
 
 ];
 
@@ -492,16 +552,16 @@ var spiritAdd = [
     "<img src='css/image/roulette/kill/Spirit/kaiunTalisman.png'>Kaiun Talisman",
     "<img src='css/image/roulette/kill/Spirit/juniperBonsai.png'>Juniper Bonsai",
     "<img src='css/image/roulette/kill/Spirit/rustyFlute.png'>Rusty Flute",
-    "<img src='css/image/roulette/kill/Spirit/katsumoriTalisman.png'>Katsumori Talisman",
+    "<img src='css/image/roulette/kill/Spirit/mothersGlasses.png'>Mothers Glasses",
     "<img src='css/image/roulette/kill/Spirit/katanaTsuba.png'>Katana Tsuba",
-    "<img src='css/image/roulette/kill/Spirit/dirtyUwabaki.png'>Dirty Uwabaki",
-    "<img src='css/image/roulette/kill/Spirit/bloodyHairBrooch.png'>Bloody Hair Brooch",
+    "<img src='css/image/roulette/kill/Spirit/kintsugiTeacup.png'>Kintsugi Teacup",
+    "<img src='css/image/roulette/kill/Spirit/furin.png'>Furin",
     "<img src='css/image/roulette/kill/Spirit/yakuyokeAmulet.png'>Yakuyoke Amulet",
     "<img src='css/image/roulette/kill/Spirit/wakizashiSaya.png'>Wakizashi Saya",
-    "<img src='css/image/roulette/kill/Spirit/prayerBeadsBracelet.png'>Prayer Beads Bracelet",
+    "<img src='css/image/roulette/kill/Spirit/uchiwa.png'>Uchiwa",
     "<img src='css/image/roulette/kill/Spirit/driedCherryBlossom.png'>Dried Cherry Blossom",
     "<img src='css/image/roulette/kill/Spirit/mother-DaughterRing.png'>Mother-Daughter Ring",
-    "<img src='css/image/roulette/kill/Spirit/fathersGlasses.png'>Fathers Glasses"
+    "<img src='css/image/roulette/kill/Spirit/senkoHanabi.png'>Senko Hanabi"
 
 ];
 
@@ -650,19 +710,19 @@ var shapeAdd = [
 var trapperAdd = [
     "<img src='css/image/roulette/kill/Trapper/trapperSack.png'>Trapper Sack",
     "<img src='css/image/roulette/kill/Trapper/trapperGloves.png'>Trapper Gloves",
-    "<img src='css/image/roulette/kill/Trapper/strongCoilSpring.png'>Strong Coil Spring",
+    "<img src='css/image/roulette/kill/Trapper/makeshiftWrap.png'>Makeshift Wrap",
     "<img src='css/image/roulette/kill/Trapper/paddedJaws.png'>Padded Jaws",
     "<img src='css/image/roulette/kill/Trapper/trapperBag.png'>Trapper Bag",
-    "<img src='css/image/roulette/kill/Trapper/trapSetters.png'>Trap Setters",
+    "<img src='css/image/roulette/kill/Trapper/coffeeGrinds.png'>Coffee Grinds",
     "<img src='css/image/roulette/kill/Trapper/serratedJaws.png'>Serrated Jaws",
-    "<img src='css/image/roulette/kill/Trapper/logwoodDye.png'>Logwood Dye",
+    "<img src='css/image/roulette/kill/Trapper/bearOil.png'>Bear Oil",
     "<img src='css/image/roulette/kill/Trapper/4-coilSpringKit.png'>4-Coil Spring Kit",
     "<img src='css/image/roulette/kill/Trapper/waxBrick.png'>Wax Brick",
     "<img src='css/image/roulette/kill/Trapper/tarBottle.png'>Tar Bottle",
-    "<img src='css/image/roulette/kill/Trapper/settingTools.png'>Setting Tools",
+    "<img src='css/image/roulette/kill/Trapper/lengthenedJaws.png'>Lengthened Jaws",
     "<img src='css/image/roulette/kill/Trapper/secondaryCoil.png'>Secondary Coil",
     "<img src='css/image/roulette/kill/Trapper/rustedJaws.png'>Rusted Jaws",
-    "<img src='css/image/roulette/kill/Trapper/stitchedBag.png'>Stitched Bag",
+    "<img src='css/image/roulette/kill/Trapper/tensionSpring.png'>Tension Spring",
     "<img src='css/image/roulette/kill/Trapper/oilyCoil.png'>Oily Coil",
     "<img src='css/image/roulette/kill/Trapper/honingStone.png'>Honing Stone",
     "<img src='css/image/roulette/kill/Trapper/fasteningTools.png'>Fastening Tools",
@@ -741,6 +801,190 @@ var oniAdd = [
     "<img src='css/image/roulette/kill/Oni/iridescentFamilyCrest.png'>Iridescent Family Crest"
 ];
 
+var deathAdd = [
+    "<img src='css/image/roulette/kill/Deathslinger/spitPolishRag.png'>Spit Polish Rag",
+    "<img src='css/image/roulette/kill/Deathslinger/snakeOil.png'>Snake Oil",
+    "<img src='css/image/roulette/kill/Deathslinger/ricketyChain.png'>Rickety Chaing",
+    "<img src='css/image/roulette/kill/Deathslinger/modifiedAmmoBelt.png'>Modified Ammo Belt",
+    "<img src='css/image/roulette/kill/Deathslinger/rustedSpike.png'>Rusted Spike",
+    "<img src='css/image/roulette/kill/Deathslinger/poisonOakLeaves.png'>Poison Oak Leaves",
+    "<img src='css/image/roulette/kill/Deathslinger/marshalsBadge.png'>Marshal's Badge",
+    "<img src='css/image/roulette/kill/Deathslinger/jawSmasher.png'>Jaw Smasher",
+    "<img src='css/image/roulette/kill/Deathslinger/chewingTobacco.png'>Chewing Tobacco",
+    "<img src='css/image/roulette/kill/Deathslinger/wardensKeys.png'>Wardens Keys",
+    "<img src='css/image/roulette/kill/Deathslinger/wantedPoster.png'>Wanted Poster",
+    "<img src='css/image/roulette/kill/Deathslinger/tinOilCan.png'>Tin Oil Can",
+    "<img src='css/image/roulette/kill/Deathslinger/honeyLocustThorn.png'>Honey Locust Thorn",
+    "<img src='css/image/roulette/kill/Deathslinger/bayshoresGoldTooth.png'>Bayshore's Gold Tooth",
+    "<img src='css/image/roulette/kill/Deathslinger/prisonChain.png'>Prison Chain",
+    "<img src='css/image/roulette/kill/Deathslinger/goldCreekWhiskey.png'> Gold Creek Whiskey",
+    "<img src='css/image/roulette/kill/Deathslinger/bayshoresCigar.png'>Bayshore's Cigar",
+    "<img src='css/image/roulette/kill/Deathslinger/barbedWire.png'>Barbed Wire",
+    "<img src='css/image/roulette/kill/Deathslinger/iridescentCoin.png'>Iridescent Coin",
+    "<img src='css/image/roulette/kill/Deathslinger/hellshireIron.png'>Hellshire Iron"
+];
+
+var exeAdd = [
+    "<img src='css/image/roulette/kill/Executioner/leadRing.png'>Lead Ring",
+    "<img src='css/image/roulette/kill/Executioner/deadButterfly.png'>Dead Butterfly",
+    "<img src='css/image/roulette/kill/Executioner/copperRing.png'>Copper Ring",
+    "<img src='css/image/roulette/kill/Executioner/blackStrap.png'>Black Strap",
+    "<img src='css/image/roulette/kill/Executioner/waxDoll.png'>Wax Doll",
+    "<img src='css/image/roulette/kill/Executioner/spearhead.png'>Spearhead",
+    "<img src='css/image/roulette/kill/Executioner/leopardprintFabric.png'>Leopard-Print Fabric",
+    "<img src='css/image/roulette/kill/Executioner/forgottenVideotape.png'>Forgotten Videotape",
+    "<img src='css/image/roulette/kill/Executioner/cinderellaMusicBox.png'>Cinderella Music Box",
+    "<img src='css/image/roulette/kill/Executioner/valtielSectPhotograph.png'>Valtiel Sect Photograph",
+    "<img src='css/image/roulette/kill/Executioner/tabletOfTheOppressor.png'>Tablet of the Oppressor",
+    "<img src='css/image/roulette/kill/Executioner/mistyDay.png'>Misty Day, Remains of Judgement",
+    "<img src='css/image/roulette/kill/Executioner/mannequinFoot.png'>Manneguin Foot",
+    "<img src='css/image/roulette/kill/Executioner/burningManPainting.png'>Burning Man Painting",
+    "<img src='css/image/roulette/kill/Executioner/scarletEgg.png'>Scarlet Egg",
+    "<img src='css/image/roulette/kill/Executioner/rustColoredEgg.png'>Rust-Colored Egg",
+    "<img src='css/image/roulette/kill/Executioner/lostMemoriesBook.png'>Lost Meories Book",
+    "<img src='css/image/roulette/kill/Executioner/crimsonCeremonyBook.png'>Crimson Ceremony Book",
+    "<img src='css/image/roulette/kill/Executioner/obsidianGoblet.png'>Obsidian Goblet",
+    "<img src='css/image/roulette/kill/Executioner/iridescentSealOfMetatron.png'>Iridescent Seal of Metatron"
+];
+
+var blighAdd = [
+    "<img src='css/image/roulette/kill/Blight/placeboTablet.png'>Placebo Tablet",
+    "<img src='css/image/roulette/kill/Blight/foxglove.png'>Foxglove",
+    "<img src='css/image/roulette/kill/Blight/compoundSeven.png'>Compound Seven",
+    "<img src='css/image/roulette/kill/Blight/chippedMonocle.png'>Chipped Monocle",
+    "<img src='css/image/roulette/kill/Blight/shreddedNotes.png'>Shredded Notes",
+    "<img src='css/image/roulette/kill/Blight/pustulaDust.png'>Pustula Dust",
+    "<img src='css/image/roulette/kill/Blight/plagueBile.png'>Plague Bile",
+    "<img src='css/image/roulette/kill/Blight/cankerThorn.png'>Canker Thorn",
+    "<img src='css/image/roulette/kill/Blight/blightedRat.png'>Blighted Rat",
+    "<img src='css/image/roulette/kill/Blight/umbraSalts.png'> Umbra Salts",
+    "<img src='css/image/roulette/kill/Blight/roseTonic.png'>Rose Tonic",
+    "<img src='css/image/roulette/kill/Blight/compoundTwentyOne.png'>Compound Twenty-One",
+    "<img src='css/image/roulette/kill/Blight/blightedCrow.png'>Blighted Crow",
+    "<img src='css/image/roulette/kill/Blight/adrenalineVial.png'>Arenaline Vial",
+    "<img src='css/image/roulette/kill/Blight/vigosJournal.png'>Vigo's Journal",
+    "<img src='css/image/roulette/kill/Blight/summoningStone.png'>Summoning Stone",
+    "<img src='css/image/roulette/kill/Blight/soulChemical.png'>Soul Chemical",
+    "<img src='css/image/roulette/kill/Blight/alchemistsRing.png'>Alchemist Ring",
+    "<img src='css/image/roulette/kill/Blight/iridescentBlightTag.png'>Iridescent Blight Tag",
+    "<img src='css/image/roulette/kill/Blight/compoundThirtyThree.png'>Compound Thirdy-three"
+];
+
+var twinsAdd = [
+    "<img src='css/image/roulette/kill/Twins/toySword.png'>Toy Sword",
+    "<img src='css/image/roulette/kill/Twins/tinyFingernail.png'>Tiny Fingernail",
+    "<img src='css/image/roulette/kill/Twins/souredMilk.png'>Soured Milk",
+    "<img src='css/image/roulette/kill/Twins/catFigurine.png'>Cat Figurine",
+    "<img src='css/image/roulette/kill/Twins/madeleinesGlove.png'>Madeleine's Glove",
+    "<img src='css/image/roulette/kill/Twins/ceremonialCandelabrum.png'>Ceremonial Candelabrum",
+    "<img src='css/image/roulette/kill/Twins/catsEye.png'>Cat's Eye",
+    "<img src='css/image/roulette/kill/Twins/bloodyBlackHood.png'>Bloody Black Hood",
+    "<img src='css/image/roulette/kill/Twins/babyTeeth.png'>Baby Teeth",
+    "<img src='css/image/roulette/kill/Twins/weightyRattle.png'>Weighty Rattle",
+    "<img src='css/image/roulette/kill/Twins/staleBiscuit.png'>Stale Biscuit",
+    "<img src='css/image/roulette/kill/Twins/sewerSludge.png'>Sewer Sludge",
+    "<img src='css/image/roulette/kill/Twins/rustedNeedle.png'>Rusted Neelde",
+    "<img src='css/image/roulette/kill/Twins/madeleinesScarf.png'>Madeleine's Scarf",
+    "<img src='css/image/roulette/kill/Twins/victorsSoldier.png'>Victor's Soldier",
+    "<img src='css/image/roulette/kill/Twins/spinningTop.png'>Spinning Top",
+    "<img src='css/image/roulette/kill/Twins/forestStew.png'>Forest Stew",
+    "<img src='css/image/roulette/kill/Twins/dropOfPerfume.png'>Drop of Perfume",
+    "<img src='css/image/roulette/kill/Twins/silencingCloth.png'>Silencing Cloth",
+    "<img src='css/image/roulette/kill/Twins/iridescentPendant.png'>Iridescent Pendant"
+];
+
+var trickAdd = [
+    "<img src='css/image/roulette/kill/Trickster/trickPouch.png'>Trick Pouch",
+    "<img src='css/image/roulette/kill/Trickster/mementoBlades.png'>Memento Blades",
+    "<img src='css/image/roulette/kill/Trickster/killingPartChords.png'>Killing Part Chords",
+    "<img src='css/image/roulette/kill/Trickster/infernoWires.png'>Inferno Wires",
+    "<img src='css/image/roulette/kill/Trickster/tequilaMoonrock.png'>Tequila Moonrock",
+    "<img src='css/image/roulette/kill/Trickster/onTargetSingle.png'>On Target Single",
+    "<img src='css/image/roulette/kill/Trickster/luckyBlade.png'>Lucky Blade",
+    "<img src='css/image/roulette/kill/Trickster/ji-WoonsAutograph.png'>Ji-Woon's Autograph",
+    "<img src='css/image/roulette/kill/Trickster/cagedHeartShoes.png'>Caged Heart Shoes",
+    "<img src='css/image/roulette/kill/Trickster/melodiousMurder.png'>Melodious Murder",
+    "<img src='css/image/roulette/kill/Trickster/waitingForYouWatch.png'>Waiting For You Watch",
+    "<img src='css/image/roulette/kill/Trickster/ripperBrace.png'>Ripper Brace",
+    "<img src='css/image/roulette/kill/Trickster/fizz-SpinSoda.png'>Fizz-Spin Soda",
+    "<img src='css/image/roulette/kill/Trickster/bloodyBoa.png'>Bloody Boa",
+    "<img src='css/image/roulette/kill/Trickster/trickBlades.png'>Trick Blade's",
+    "<img src='css/image/roulette/kill/Trickster/edgeOfRevivalAlbum.png'>Edge of Revival Album",
+    "<img src='css/image/roulette/kill/Trickster/diamondCufflinks.png'>Diamond Cufflinks",
+    "<img src='css/image/roulette/kill/Trickster/cutThruUSingle.png'>Cut Thru U Single",
+    "<img src='css/image/roulette/kill/Trickster/iridescentPhotocard.png'>Iridescent Photocard",
+    "<img src='css/image/roulette/kill/Trickster/deathThroesCompilation.png'>Death Throes Comilation"
+];
+
+var nemesisAdd = [
+    "<img src='css/image/roulette/kill/Nemesis/visitorWristband.png'>Visitor Wristband",
+    "<img src='css/image/roulette/kill/Nemesis/starsFieldCombatManual.png'>Star's Field Combat Manual",
+    "<img src='css/image/roulette/kill/Nemesis/damagedSyringe.png'>Damaged Syringe",
+    "<img src='css/image/roulette/kill/Nemesis/briansIntestine.png'>Brian's Intestine",
+    "<img src='css/image/roulette/kill/Nemesis/zombieHeart.png'>Zombie Hearth",
+    "<img src='css/image/roulette/kill/Nemesis/mikhailsEye.png'>Mikhail's Eye",
+    "<img src='css/image/roulette/kill/Nemesis/marvinsBlood.png'>Marvin's Blood",
+    "<img src='css/image/roulette/kill/Nemesis/adrenalineInjector.png'>Adrenaline Injector",
+    "<img src='css/image/roulette/kill/Nemesis/adminWristband.png'>Admin Wristband",
+    "<img src='css/image/roulette/kill/Nemesis/tyrantGore.png'>Tyrant Gore",
+    "<img src='css/image/roulette/kill/Nemesis/t-VirusSample.png'>T-Virus Sample",
+    "<img src='css/image/roulette/kill/Nemesis/serotoninInjector.png'>Serotonin Injector",
+    "<img src='css/image/roulette/kill/Nemesis/plant43Vines.png'>Plant 43 Vines",
+    "<img src='css/image/roulette/kill/Nemesis/lickerTongue.png'>Licker Tongue",
+    "<img src='css/image/roulette/kill/Nemesis/ne-AParasite.png'>NE-a Parasite",
+    "<img src='css/image/roulette/kill/Nemesis/jillsSandwich.png'>Jill's Sandwich",
+    "<img src='css/image/roulette/kill/Nemesis/depletedInkRibbon.png'>Depleted Ink Ribbon",
+    "<img src='css/image/roulette/kill/Nemesis/brokenRecoveryCoin.png'>Broken Recovery Coin",
+    "<img src='css/image/roulette/kill/Nemesis/shatteredSTARSBadge.png'>Shattered S.T.A.R.S Badge",
+    "<img src='css/image/roulette/kill/Nemesis/iridescentUmbrellaBadge.png'>Iridescent Umbrella Badge"
+];
+
+var pinheadAdd = [
+    "<img src='css/image/roulette/kill/Pinhead/bentNail.png'>Bent Nail",
+    "<img src='css/image/roulette/kill/Pinhead/burningCandle.png'>Burning Candle",
+    "<img src='css/image/roulette/kill/Pinhead/chatterersTooth.png'>Chatterers Tooth",
+    "<img src='css/image/roulette/kill/Pinhead/engineersFang.png'>Engineers Fang",
+    "<img src='css/image/roulette/kill/Pinhead/flickeringTelevision.png'>Flickering Television",
+    "<img src='css/image/roulette/kill/Pinhead/franksHeart.png'>Franks Heart",
+    "<img src='css/image/roulette/kill/Pinhead/greasyBlackLens.png'>Greasy Black Lens",
+    "<img src='css/image/roulette/kill/Pinhead/impalingWire.png'>Impaling Wire",
+    "<img src='css/image/roulette/kill/Pinhead/iridescentLamentConfiguration.png'>Iridescent Lament Configuration",
+    "<img src='css/image/roulette/kill/Pinhead/larrysBlood.png'>Larrys Blood",
+    "<img src='css/image/roulette/kill/Pinhead/larrysRemains.png'>Larrys Remains",
+    "<img src='css/image/roulette/kill/Pinhead/leatherStrip.png'>Leather Strip",
+    "<img src='css/image/roulette/kill/Pinhead/liquifiedGore.png'>Liquified Gore",
+    "<img src='css/image/roulette/kill/Pinhead/livelyCrickets.png'>Lively Crickets",
+    "<img src='css/image/roulette/kill/Pinhead/originalPain.png'>Original Pain",
+    "<img src='css/image/roulette/kill/Pinhead/skeweredRat.png'>Skewered Rat",
+    "<img src='css/image/roulette/kill/Pinhead/sliceOfFrank.png'>Slice Of Frank",
+    "<img src='css/image/roulette/kill/Pinhead/spoiledMeal.png'>Spoiled Meal",
+    "<img src='css/image/roulette/kill/Pinhead/torturePillar.png'>Torture Pillar",
+    "<img src='css/image/roulette/kill/Pinhead/wrigglingMaggots.png'>Wriggling Maggots"
+];
+
+var artistAdd = [
+    "<img src='css/image/roulette/kill/Artist/automaticDrawing.png'>Automatic Drawing",
+    "<img src='css/image/roulette/kill/Artist/charcoalStick.png'>Charcoal Stick",
+    "<img src='css/image/roulette/kill/Artist/chocloCorn.png'>Choclo Corn",
+    "<img src='css/image/roulette/kill/Artist/darkestInk.png'>Darkest Ink",
+    "<img src='css/image/roulette/kill/Artist/festeringCarrion.png'>Festering Carrion",
+    "<img src='css/image/roulette/kill/Artist/gardenOfRot.png'>Garden Of Rot",
+    "<img src='css/image/roulette/kill/Artist/inkEgg.png'>Ink Egg",
+    "<img src='css/image/roulette/kill/Artist/iridescentFeather.png'>Iridescent Feather",
+    "<img src='css/image/roulette/kill/Artist/matiasBabyShoes.png'>Matias Baby Shoes",
+    "<img src='css/image/roulette/kill/Artist/oGriefOLover.png'>O Grief O Lover",
+    "<img src='css/image/roulette/kill/Artist/oilPaints.png'>Oil Paints",
+    "<img src='css/image/roulette/kill/Artist/severedHands.png'>Severed Hands",
+    "<img src='css/image/roulette/kill/Artist/severedTongue.png'>Severed Tongue",
+    "<img src='css/image/roulette/kill/Artist/silverBell.png'>Silver Bell",
+    "<img src='css/image/roulette/kill/Artist/stillLifeCrow.png'>Still Life Crow",
+    "<img src='css/image/roulette/kill/Artist/thickTar.png'>Thick Tar",
+    "<img src='css/image/roulette/kill/Artist/thornyNest.png'>Thorny Nest",
+    "<img src='css/image/roulette/kill/Artist/untitledAgony.png'>Untitled Agony",
+    "<img src='css/image/roulette/kill/Artist/velvetFabric.png'>Velvet Fabric",
+    "<img src='css/image/roulette/kill/Artist/vibrantObituary.png'>Vibrant Obituary",
+];
+
 var offeringsurv = [
     "<img src='css/image/roulette/Offerings/Survivor/vigosShroud.png'>Vigo's Shroud",
     "<img src='css/image/roulette/Offerings/Survivor/vigosJarOfSaltyLips.png'>Vigo's Jar Of Salty Lips",
@@ -796,6 +1040,7 @@ var offeringkill = [
     "<img src='css/image/roulette/Offerings/Killer/shroudOfSeparation.png'>Shroud Of Separation",
     "<img src='css/image/roulette/Offerings/Killer/putridOak.png'>Putrid Oak",
 ]
+
 /*---------------------------------------------------------------*/
 
 
@@ -804,12 +1049,12 @@ var RandButton = ["none",
 
 // Surviver Background
 function sb() {
-    document.body.style.backgroundImage = "url('wp2222325.jpg')";
+    document.body.style.backgroundImage = "url('SurvivorBack.jpg')";
 }
 
 // Killer background
 function kb() {
-    document.body.style.backgroundImage = "url('Killerback.jpg')";
+    document.body.style.backgroundImage = "url('wallhaven.png')";
 }
 
 // Shows the information about the page in and show images when randomizing
@@ -849,7 +1094,7 @@ function randomateSurvPerks() {
 
 };
 
-// The on for killer
+// The one for killer
 function randomateKiller() {
     var killershuffled = Killer.sort(function () {
         return .5 - Math.random()
@@ -864,8 +1109,6 @@ function randomateKiller() {
 
         var killerAddselected = killerAddShuffled.slice(0, 2);
 
-
-
         document.getElementById("perkslotone").innerHTML = killerselected[0];
         document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
         document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
@@ -876,8 +1119,6 @@ function randomateKiller() {
         });
 
         var killerAddselected = killerAddShuffled.slice(0, 2);
-
-
 
         document.getElementById("perkslotone").innerHTML = killerselected[0];
         document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
@@ -1055,7 +1296,93 @@ function randomateKiller() {
 
         var killerAddselected = killerAddShuffled.slice(0, 2);
 
+        document.getElementById("perkslotone").innerHTML = killerselected[0];
+        document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
+        document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
+        document.getElementById("perkslotfour").innerHTML = killerselected[0];
+    } else if (killerselected[0] == "<img src='css/image/roulette/kill/K19.png'>The Deathslinger") {
+        var killerAddShuffled = deathAdd.sort(function () {
+            return .5 - Math.random()
+        });
 
+        var killerAddselected = killerAddShuffled.slice(0, 2);
+
+        document.getElementById("perkslotone").innerHTML = killerselected[0];
+        document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
+        document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
+        document.getElementById("perkslotfour").innerHTML = killerselected[0];
+    } else if (killerselected[0] == "<img src='css/image/roulette/kill/K20.png'>The Executioner") {
+        var killerAddShuffled = exeAdd.sort(function () {
+            return .5 - Math.random()
+        });
+
+        var killerAddselected = killerAddShuffled.slice(0, 2);
+
+        document.getElementById("perkslotone").innerHTML = killerselected[0];
+        document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
+        document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
+        document.getElementById("perkslotfour").innerHTML = killerselected[0];
+    } else if (killerselected[0] == "<img src='css/image/roulette/kill/K21.png'>The Blight") {
+        var killerAddShuffled = blighAdd.sort(function () {
+            return .5 - Math.random()
+        });
+
+        var killerAddselected = killerAddShuffled.slice(0, 2);
+
+        document.getElementById("perkslotone").innerHTML = killerselected[0];
+        document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
+        document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
+        document.getElementById("perkslotfour").innerHTML = killerselected[0];
+    } else if (killerselected[0] == "<img src='css/image/roulette/kill/K22.png'>The Twins") {
+        var killerAddShuffled = twinsAdd.sort(function () {
+            return .5 - Math.random()
+        });
+
+        var killerAddselected = killerAddShuffled.slice(0, 2);
+
+        document.getElementById("perkslotone").innerHTML = killerselected[0];
+        document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
+        document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
+        document.getElementById("perkslotfour").innerHTML = killerselected[0];
+    } else if (killerselected[0] == "<img src='css/image/roulette/kill/K23.png'>The Trickster") {
+        var killerAddShuffled = trickAdd.sort(function () {
+            return .5 - Math.random()
+        });
+
+        var killerAddselected = killerAddShuffled.slice(0, 2);
+
+        document.getElementById("perkslotone").innerHTML = killerselected[0];
+        document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
+        document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
+        document.getElementById("perkslotfour").innerHTML = killerselected[0];
+    } else if (killerselected[0] == "<img src='css/image/roulette/kill/K24.png'>The Nemesis") {
+        var killerAddShuffled = nemesisAdd.sort(function () {
+            return .5 - Math.random()
+        });
+
+        var killerAddselected = killerAddShuffled.slice(0, 2);
+
+        document.getElementById("perkslotone").innerHTML = killerselected[0];
+        document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
+        document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
+        document.getElementById("perkslotfour").innerHTML = killerselected[0];
+    } else if (killerselected[0] == "<img src='css/image/roulette/kill/K25.png'>Pinhead") {
+        var killerAddShuffled = pinheadAdd.sort(function () {
+            return .5 - Math.random()
+        });
+        
+        var killerAddselected = killerAddShuffled.slice(0, 2);
+
+        document.getElementById("perkslotone").innerHTML = killerselected[0];
+        document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
+        document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
+        document.getElementById("perkslotfour").innerHTML = killerselected[0];
+    } else if (killerselected[0] == "<img src='css/image/roulette/kill/K26.png'>The Artist") {
+        var killerAddShuffled = artistAdd.sort(function () {
+            return .5 - Math.random()
+        });
+    
+        var killerAddselected = killerAddShuffled.slice(0, 2);
 
         document.getElementById("perkslotone").innerHTML = killerselected[0];
         document.getElementById("perkslottwo").innerHTML = killerAddselected[0];

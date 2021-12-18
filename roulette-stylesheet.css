@@ -123,3 +123,11 @@ span {
     font-family: 'Roboto', sans-serif;
 
 }
+
+#BE {
+    opacity: 0.5;
+}
+
+#BE:hover {
+    opacity: 1;
+}
