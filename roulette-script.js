@@ -1388,6 +1388,82 @@ function randomateKiller() {
         document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
         document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
         document.getElementById("perkslotfour").innerHTML = killerselected[0];
+    } else if (killerselected[0] == "<img src='css/image/roulette/kill/K19.png'>The Deathslinger") {
+        var killerAddShuffled = deathAdd.sort(function () {
+            return .5 - Math.random()
+        });
+
+        var killerAddselected = killerAddShuffled.slice(0, 2);
+
+
+
+        document.getElementById("perkslotone").innerHTML = killerselected[0];
+        document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
+        document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
+        document.getElementById("perkslotfour").innerHTML = killerselected[0];
+    } else if (killerselected[0] == "<img src='css/image/roulette/kill/K20.png'>The Executioner") {
+        var killerAddShuffled = exeAdd.sort(function () {
+            return .5 - Math.random()
+        });
+
+        var killerAddselected = killerAddShuffled.slice(0, 2);
+
+
+
+        document.getElementById("perkslotone").innerHTML = killerselected[0];
+        document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
+        document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
+        document.getElementById("perkslotfour").innerHTML = killerselected[0];
+    } else if (killerselected[0] == "<img src='css/image/roulette/kill/K21.png'>The Blight") {
+        var killerAddShuffled = blighAdd.sort(function () {
+            return .5 - Math.random()
+        });
+
+        var killerAddselected = killerAddShuffled.slice(0, 2);
+
+
+
+        document.getElementById("perkslotone").innerHTML = killerselected[0];
+        document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
+        document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
+        document.getElementById("perkslotfour").innerHTML = killerselected[0];
+    } else if (killerselected[0] == "<img src='css/image/roulette/kill/K22.png'>The Twins") {
+        var killerAddShuffled = twinsAdd.sort(function () {
+            return .5 - Math.random()
+        });
+
+        var killerAddselected = killerAddShuffled.slice(0, 2);
+
+        document.getElementById("perkslotone").innerHTML = killerselected[0];
+        document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
+        document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
+        document.getElementById("perkslotfour").innerHTML = killerselected[0];
+    } else if (killerselected[0] == "<img src='css/image/roulette/kill/K23.png'>The Trickster") {
+        var killerAddShuffled = trickAdd.sort(function () {
+            return .5 - Math.random()
+        });
+
+        var killerAddselected = killerAddShuffled.slice(0, 2);
+
+
+
+        document.getElementById("perkslotone").innerHTML = killerselected[0];
+        document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
+        document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
+        document.getElementById("perkslotfour").innerHTML = killerselected[0];
+    } else if (killerselected[0] == "<img src='css/image/roulette/kill/K24.png'>The Nemesis") {
+        var killerAddShuffled = nemesisAdd.sort(function () {
+            return .5 - Math.random()
+        });
+
+        var killerAddselected = killerAddShuffled.slice(0, 2);
+
+
+
+        document.getElementById("perkslotone").innerHTML = killerselected[0];
+        document.getElementById("perkslottwo").innerHTML = killerAddselected[0];
+        document.getElementById("perkslotthree").innerHTML = killerAddselected[1];
+        document.getElementById("perkslotfour").innerHTML = killerselected[0];
     } else {
         document.getElementById("test").innerHTML = "fejl"
     };
