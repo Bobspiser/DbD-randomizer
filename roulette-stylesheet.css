@@ -124,10 +124,8 @@ span {
 
 }
 
-#BE {
-    opacity: 0.5;
-}
-
-#BE:hover {
-    opacity: 1;
+#gal1 {
+    width: 1250px;
+    height: 260px;
+    margin-left: 25px
 }

@@ -7,6 +7,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="roulette-stylesheet.css"/>
 		<script src="roulette-script.js"></script>
+        <script src="ImageChanger.js"></script>
 		<script>document.documentElement.className += 'js';</script>
 	</head>
 	<body>
@@ -17,12 +18,12 @@
 			<p> Perk Roulette </p>
 			
 			<div class="buttons_wrap"> 
-				<input type="button" value="Survivor Perks" class="btn btn-sm animated-button thar-three" onclick="showFunc(0, 1),sb()">
-                <input type="button" value="Items" class="btn btn-sm animated-button thar-three" onclick="showFunc(2, 1),sb()">
-                <input type="button" value="Offerings for Survivor" class="btn btn-sm animated-button thar-three" onclick="showFunc(4, 1),sb()">
-				<input type="button" value="Killer Perks" class="btn btn-sm animated-button thar-three" onclick="showFunc(1, 1),kb()">
-                <input type="button" value="Random Killer" class="btn btn-sm animated-button thar-three" onclick="showFunc(3, 1),kb()">
-                <input type="button" value="Offerings for Killer" class="btn btn-sm animated-button thar-three" onclick="showFunc(5, 1),kb()">
+				<input type="button" value="Survivor Perks" class="btn btn-sm animated-button thar-three" onclick="showFunc(0, 1),sb(),kg('killgal','none')">
+                <input type="button" value="Items" class="btn btn-sm animated-button thar-three" onclick="showFunc(2, 1),sb(),kg('killgal','none')">
+                <input type="button" value="Offerings for Survivor" class="btn btn-sm animated-button thar-three" onclick="showFunc(4, 1),sb(),kg('killgal','none')">
+				<input type="button" value="Killer Perks" class="btn btn-sm animated-button thar-three" onclick="showFunc(1, 1),kb(),kg('killgal','none')">
+                <input type="button" value="Random Killer" class="btn btn-sm animated-button thar-three" onclick="showFunc(3, 1),kb(),kg('killgal','inline')">
+                <input type="button" value="Offerings for Killer" class="btn btn-sm animated-button thar-three" onclick="showFunc(5, 1),kb(),kg('killgal','none')">
                 
 			</div>
 		</div>
@@ -34,37 +35,34 @@
 				<h4 id="rand_title">Welcome to Dead by Daylight's perk roulette!</h4>
 				<p id="rand_desc">To start click on what you would like to be randomly perk generated. You can choose for survivor or as a killer</p>
 				
-                <div class="gallery-preview" id="gal1">
-                    <div class="gallery-preview-text" id="gal-text1">
-                    <span class="gallery-name" href="">Select the killers you own</span><br/>
-                    </div>
+                <div class="gallery-killers" id="killgal" style="display: none">
                     <div class="gallery-preview-img" id="gal-image">
-                        <img src="css/image/roulette/kill/BE.png" id="BE", width="80px">
-                        <img src="css/image/roulette/kill/CA.png" id="CA", width="80px">
-                        <img src="css/image/roulette/kill/DO.png" id="DO", width="80px">
-                        <img src="css/image/roulette/kill/EK.png" id="EK", width="80px">
-                        <img src="css/image/roulette/kill/GK.png" id="GK", width="80px">
-                        <img src="css/image/roulette/kill/HA.png", width="80px">
-                        <img src="css/image/roulette/kill/HB.png", width="80px">
-                        <img src="css/image/roulette/kill/HK.png", width="80px">
-                        <img src="css/image/roulette/kill/K19.png", width="80px">
-                        <img src="css/image/roulette/kill/K20.png", width="80px">
-                        <img src="css/image/roulette/kill/K21.png", width="80px">
-                        <img src="css/image/roulette/kill/K22.png", width="80px">
-                        <img src="css/image/roulette/kill/K23.png", width="80px">
-                        <img src="css/image/roulette/kill/K24.png", width="80px">
-                        <img src="css/image/roulette/kill/K25.png", width="80px">
-                        <img src="css/image/roulette/kill/K26.png", width="80px">
-                        <img src="css/image/roulette/kill/KK.png", width="80px">
-                        <img src="css/image/roulette/kill/MK.png", width="80px">
-                        <img src="css/image/roulette/kill/NR.png", width="80px">
-                        <img src="css/image/roulette/kill/OK.png", width="80px">
-                        <img src="css/image/roulette/kill/ON.png", width="80px">
-                        <img src="css/image/roulette/kill/PIG.png", width="80px">
-                        <img src="css/image/roulette/kill/QK.png", width="80px">
-                        <img src="css/image/roulette/kill/SH.png", width="80px">
-                        <img src="css/image/roulette/kill/TR.png", width="80px">
-                        <img src="css/image/roulette/kill/WR.png", width="80px">
+                        <img src="css/image/roulette/kill/BE.png" id="BE" width="95px">
+                        <img src="css/image/roulette/kill/CA.png" id="CA" width="95px">
+                        <img src="css/image/roulette/kill/DO.png" width="95px">
+                        <img src="css/image/roulette/kill/EK.png" width="95px">
+                        <img src="css/image/roulette/kill/GK.png" width="95px">
+                        <img src="css/image/roulette/kill/HA.png" width="95px">
+                        <img src="css/image/roulette/kill/HB.png" width="95px">
+                        <img src="css/image/roulette/kill/HK.png" width="95px">
+                        <img src="css/image/roulette/kill/K19.png" width="95px">
+                        <img src="css/image/roulette/kill/K20.png" width="95px">
+                        <img src="css/image/roulette/kill/K21.png" width="95px">
+                        <img src="css/image/roulette/kill/K22.png" width="95px">
+                        <img src="css/image/roulette/kill/K23.png" width="95px">
+                        <img src="css/image/roulette/kill/K24.png" width="95px">
+                        <img src="css/image/roulette/kill/K25.png" width="95px">
+                        <img src="css/image/roulette/kill/K26.png" width="95px">
+                        <img src="css/image/roulette/kill/KK.png" width="95px">
+                        <img src="css/image/roulette/kill/MK.png" width="95px">
+                        <img src="css/image/roulette/kill/NR.png" width="95px">
+                        <img src="css/image/roulette/kill/OK.png" width="95px">
+                        <img src="css/image/roulette/kill/ON.png" width="95px">
+                        <img src="css/image/roulette/kill/PIG.png" width="95px">
+                        <img src="css/image/roulette/kill/QK.png" width="95px">
+                        <img src="css/image/roulette/kill/SH.png" width="95px">
+                        <img src="css/image/roulette/kill/TR.png" width="95px">
+                        <img src="css/image/roulette/kill/WR.png" width="95px">
                     </div>
 
                 </div>
@@ -80,6 +78,5 @@
 				
 			</div>
 		</div>
-
 	</body>
 </html>

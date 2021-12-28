@@ -1057,6 +1057,10 @@ function kb() {
     document.body.style.backgroundImage = "url('wallhaven.png')";
 }
 
+function kg(id, visibility) {
+    document.getElementById(id).style.display = visibility;
+}
+
 // Shows the information about the page in and show images when randomizing
 function showFunc(x, y) {
     document.getElementById("rand_title").innerHTML = RandTitles[x];
